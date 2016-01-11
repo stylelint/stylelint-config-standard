@@ -1,0 +1,43 @@
+{
+  "name": "stylelint-config-standard",
+  "version": "",
+  "description": "Standard shareable config for stylelint",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "standard"
+  ],
+  "author": "Stylelint",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stylelint/stylelint-config-standard.git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-tape-runner": "^2.0.0",
+    "babel": "^6.3.26",
+    "eslint-config-stylelint": "^0.1.0",
+    "eslint": "^1.10.3",
+    "github-release-from-changelog": "^1.1.1",
+    "npmpub": "^2.0.0",
+    "stylelint": "^3.2.2",
+    "tape": "^4.4.0"
+  },
+  "scripts": {
+    "lint": "eslint . --ignore-path .gitignore",
+    "release": "npmpublish && github-release-from-changelog",
+    "tape": "babel-tape-runner \"__tests__/**/*.js\"",
+    "test": "npm run lint && npm run tape"
+  },
+  "babel": {
+    "presets": ["es2015"]
+  },
+  "eslintConfig": {
+    "extends": ["stylelint"]
+  }
+}
