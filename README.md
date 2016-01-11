@@ -9,7 +9,7 @@ It is derived from the common rules found within a handful of CSS styleguides, i
 [Github's PrimerCSS Guidelines](http://primercss.io/guidelines/#scss),
 [Google's CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.xml#CSS_Formatting_Rules), [Airbnb's Styleguide](https://github.com/airbnb/css#css), and [@mdo's Code Guide](http://codeguide.co/#css).
 
-It favours flexibility over strictness for things like multi-line declarations and single-line rulesets, and tries to avoid potentially divisive rules.
+It favours flexibility over strictness for things like multi-line lists and single-line rulesets, and tries to avoid potentially divisive rules.
 
 ## Example
 
