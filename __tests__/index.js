@@ -1,40 +1,6 @@
 import config from "../"
 import stylelint from "stylelint"
-import test from "tape"
-
-test("basic properties of config", t => {
-  t.ok(isObject(config.rules), "rules is object")
-  t.end()
-})
-
-function isObject(obj) {
-  return typeof obj === "object" && obj !== null
-}
-
-const invalidCss = (
-`a {
-  top: .2em;
-}
-
-`)
-
-stylelint.lint({
-  code: invalidCss,
-  config: config,
-})
-.then(function (data) {
-  const { errored, results } = data
-  const { warnings } = results[0]
-  test("expected warnings", t => {
-    t.ok(errored, "errored")
-    t.equal(warnings.length, 1, "flags one warning")
-    t.equal(warnings[0].text, "Expected a leading zero (number-leading-zero)", "correct warning text")
-    t.end()
-  })
-})
-.catch(function (err) {
-  console.error(err.stack)
-})
+import test from "ava"
 
 const validCss = (
 `/**
@@ -104,19 +70,42 @@ const validCss = (
 
 `)
 
-stylelint.lint({
-  code: validCss,
-  config: config,
-})
-.then(function (data) {
-  const { errored, results } = data
-  const { warnings } = results[0]
-  test("expected no warnings", t => {
+const invalidCss = (
+`a {
+  top: .2em;
+}
+
+`)
+
+test("no warnings with valid css", t => {
+  stylelint.lint({
+    code: validCss,
+    config: config,
+  })
+  .then(data => {
+    const { errored, results } = data
+    const { warnings } = results[0]
     t.notOk(errored, "no errored")
-    t.equal(warnings.length, 0, "flags no warnings")
-    t.end()
+    t.is(warnings.length, 0, "flags no warnings")
+  })
+  .catch(function (err) {
+    console.error(err.stack)
   })
 })
-.catch(function (err) {
-  console.error(err.stack)
+
+test("a warning with invalid css", t => {
+  stylelint.lint({
+    code: invalidCss,
+    config: config,
+  })
+  .then(data => {
+    const { errored, results } = data
+    const { warnings } = results[0]
+    t.ok(errored, "errored")
+    t.is(warnings.length, 1, "flags one warning")
+    t.is(warnings[0].text, "Expected a leading zero (number-leading-zero)", "correct warning text")
+  })
+  .catch(function (err) {
+    console.error(err.stack)
+  })
 })
