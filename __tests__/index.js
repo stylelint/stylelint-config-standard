@@ -41,6 +41,7 @@ const validCss = (
   }
 }
 
+/* Flush single line comment */
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
@@ -62,6 +63,7 @@ const validCss = (
     height: 10rem;
   }
 
+  /* Flush nested single line comment */
   .selector::after {
     content: "→";
     background-image: url("x.svg");

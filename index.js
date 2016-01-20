@@ -2,6 +2,7 @@ module.exports = {
   "rules": {
     "at-rule-empty-line-before": [ "always", {
       except: ["blockless-group"],
+      ignore: ["after-comment"],
     } ],
     "block-closing-brace-newline-after": "always",
     "block-closing-brace-newline-before": "always-multi-line",
@@ -48,7 +49,9 @@ module.exports = {
     "number-no-trailing-zeros": true,
     "number-zero-length-no-unit": true,
     "rule-no-shorthand-property-overrides": true,
-    "rule-non-nested-empty-line-before": "always-multi-line",
+    "rule-non-nested-empty-line-before": [ "always-multi-line", {
+      ignore: ["after-comment"],
+    } ],
     "rule-trailing-semicolon": "always",
     "selector-combinator-space-after": "always",
     "selector-combinator-space-before": "always",
