@@ -23,7 +23,7 @@ It favours flexibility over strictness for things like multi-line lists and sing
 .selector-3[type="text"] {
   background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
   box-sizing: border-box;
-  display: block;  
+  display: block;
   color: #333;
 }
 
@@ -52,6 +52,7 @@ It favours flexibility over strictness for things like multi-line lists and sing
   }
 }
 
+/* Flush single line comment */
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
@@ -73,6 +74,7 @@ It favours flexibility over strictness for things like multi-line lists and sing
     height: 10rem;
   }
 
+  /* Flush nested single line comment */
   .selector::after {
     content: "→";
     background-image: url("x.svg");
