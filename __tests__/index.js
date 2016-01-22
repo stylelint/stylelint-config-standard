@@ -30,6 +30,7 @@ const validCss = (
 
 @media (min-width >= 60em) {
   .selector {
+    /* Flush to parent comment */
     transform: translate(1, 1) scale(3);
   }
 }

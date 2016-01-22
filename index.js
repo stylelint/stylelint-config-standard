@@ -14,7 +14,10 @@ module.exports = {
     "color-hex-case": "lower",
     "color-hex-length": "short",
     "color-no-invalid-hex": true,
-    "comment-empty-line-before": "always",
+    "comment-empty-line-before": [ "always", {
+      except: ["first-nested"],
+      ignore: ["stylelint-commands"],
+    } ],
     "comment-whitespace-inside": "always",
     "declaration-bang-space-after": "never",
     "declaration-bang-space-before": "always",
