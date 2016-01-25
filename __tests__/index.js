@@ -91,9 +91,6 @@ test("no warnings with valid css", t => {
     t.notOk(errored, "no errored")
     t.is(warnings.length, 0, "flags no warnings")
   })
-  .catch(function (err) {
-    console.error(err.stack)
-  })
 })
 
 test("a warning with invalid css", t => {
@@ -107,8 +104,5 @@ test("a warning with invalid css", t => {
     t.ok(errored, "errored")
     t.is(warnings.length, 1, "flags one warning")
     t.is(warnings[0].text, "Expected a leading zero (number-leading-zero)", "correct warning text")
-  })
-  .catch(function (err) {
-    console.error(err.stack)
   })
 })
