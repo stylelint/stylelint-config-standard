@@ -1,3 +1,7 @@
+# Head
+
+* Changed: first-nested at-rules now behave the same as first-nested comments i.e. they can no longer be preceded by an empty line.
+
 # 2.0.0
 
 * Changed: first-nested comments can no longer be preceded by an empty line.
