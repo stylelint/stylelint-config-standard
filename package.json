@@ -27,8 +27,9 @@
   "scripts": {
     "ava": "ava --verbose \"__tests__/**/*.js\"",
     "lint": "eslint . --ignore-path .gitignore",
+    "pretest": "npm run lint",
     "release": "npmpub",
-    "test": "npm run lint && npm run ava"
+    "test": "npm run ava"
   },
   "babel": {
     "presets": ["es2015"]
