@@ -94,11 +94,19 @@ $ npm install stylelint-config-standard
 
 ## Usage
 
-Set your stylelint config to:
+If you've installed `stylelint-config-standard` locally within your project, just set your `stylelint` config to:
 
 ```json
 {
   "extends": "stylelint-config-standard"
+}
+```
+
+If you've globally installed `stylelint-config-standard` using the `-g` flag, then you'll need to use the absolute path to `stylelint-config-standard` in your config e.g.
+
+```json
+{
+  "extends": "/absolute/path/to/stylelint-config-standard"
 }
 ```
 
