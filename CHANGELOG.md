@@ -1,8 +1,8 @@
 # Head
 
 * Removed: `stylelint < 4.3.0` compatibility.
-  * Added: `font-family-name-quotes` rule with double quotes where recommended option.
-  * Added: `media-feature-no-missing-punctuation` rule.
+* Added: `font-family-name-quotes` rule with double quotes where recommended option.
+* Added: `media-feature-no-missing-punctuation` rule.
 
 # 3.0.0
 
