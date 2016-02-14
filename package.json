@@ -22,7 +22,7 @@
     "eslint": "^1.10.3",
     "eslint-config-stylelint": "^0.1.0",
     "npmpub": "^3.0.1",
-    "stylelint": "^4.0.0"
+    "stylelint": "^4.3.3"
   },
   "scripts": {
     "ava": "ava --verbose \"__tests__/**/*.js\"",
@@ -32,9 +32,13 @@
     "test": "npm run ava"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   },
   "eslintConfig": {
-    "extends": ["stylelint"]
+    "extends": [
+      "stylelint"
+    ]
   }
 }
