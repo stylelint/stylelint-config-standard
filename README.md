@@ -1,4 +1,5 @@
 # stylelint-config-standard
+
 [![NPM version](http://img.shields.io/npm/v/stylelint-config-standard.svg)](https://www.npmjs.org/package/stylelint-config-standard) [![Build Status](https://travis-ci.org/stylelint/stylelint-config-standard.svg?branch=master)](https://travis-ci.org/stylelint/stylelint-config-standard) [![Build status](https://ci.appveyor.com/api/projects/status/o8rfhyax6n7bjnlt/branch/master?svg=true)](https://ci.appveyor.com/project/stylelint/stylelint-config-standard/branch/master)
 
 > The standard shareable config for stylelint.
@@ -84,7 +85,7 @@ It favours flexibility over strictness for things like multi-line lists and sing
 
 ```
 
-_Note: the config is tested against this example, as such the example contains plenty of CSS syntax, formatting and features._
+*Note: the config is tested against this example, as such the example contains plenty of CSS syntax, formatting and features.*
 
 ## Installation
 
@@ -115,7 +116,6 @@ If you've globally installed `stylelint-config-standard` using the `-g` flag, th
 Simply add a `"rules"` key to your config and add your overrides there.
 
 For example, to change the `indentation` to tabs and turn off the `number-leading-zero` rule:
-
 
 ```json
 {
