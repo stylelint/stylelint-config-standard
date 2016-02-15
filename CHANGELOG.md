@@ -3,6 +3,7 @@
 * Removed: `stylelint < 4.3.0` compatibility.
 * Added: `font-family-name-quotes` rule with double quotes where recommended option.
 * Added: `media-feature-no-missing-punctuation` rule.
+* Added: `no-invalid-double-slash-comments` rule.
 
 # 3.0.0
 

@@ -38,7 +38,7 @@ const validCss = (
 @media (min-orientation: portrait), projection and (color) {
   .selector-i + .selector-ii {
     background: color(rgb(0, 0, 0) lightness(50%));
-    font-family: helvetica, arial, sans-serif;
+    font-family: helvetica, "arial black", sans-serif;
   }
 }
 
