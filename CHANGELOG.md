@@ -1,7 +1,8 @@
 # Head
 
 - Removed: `stylelint < 4.3.0` compatibility.
-- Added: `font-family-name-quotes` rule with double quotes where recommended option.
+- Added: `font-family-name-quotes` rule with `"double-where-recommended"` option.
+- Added: `function-linear-gradient-no-nonstandard-direction` rule.
 - Added: `media-feature-no-missing-punctuation` rule.
 - Added: `no-invalid-double-slash-comments` rule.
 
