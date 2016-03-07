@@ -1,4 +1,4 @@
-# Head
+# 4.0.0
 
 - Removed: `stylelint < 4.5.0` compatibility.
 - Added: `font-family-name-quotes` rule with `"double-where-recommended"` option.
