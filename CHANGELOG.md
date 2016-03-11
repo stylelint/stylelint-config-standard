@@ -1,3 +1,7 @@
+# 4.0.1
+
+- Fixed: include peerDependencies in `package.json` to expose compatibility.
+
 # 4.0.0
 
 - Removed: `stylelint < 4.5.0` compatibility.
