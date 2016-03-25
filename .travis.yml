@@ -9,9 +9,14 @@ branches:
 
 language: node_js
 
+# cache node modules
 cache:
   directories:
     - node_modules
 
 node_js:
   - '5'
+
+before_install:
+  # remove outdated deps, assists with cache maintenance
+  - npm prune
