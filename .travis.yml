@@ -1,5 +1,17 @@
 sudo: false
 
+git:
+  depth: 1
+
+branches:
+  only:
+    - master
+
 language: node_js
+
+cache:
+  directories:
+    - node_modules
+
 node_js:
-  - stable
+  - '5'
