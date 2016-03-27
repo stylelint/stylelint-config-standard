@@ -66,8 +66,8 @@ const validCss = (
 
   /* Flush nested single line comment */
   .selector::after {
-    content: "→";
-    background-image: url("x.svg");
+    content: '→';
+    background-image: url(x.svg);
   }
 }
 
