@@ -127,6 +127,19 @@ For example, to change the `indentation` to tabs and turn off the `number-leadin
 }
 ```
 
+### Using the config with SugarSS syntax
+
+The config is broadly compatible with [SugarSS](https://github.com/postcss/sugarss) syntax. You *will* need to turn off the `declaration-block-trailing-semicolon` rule, as so:
+
+```json
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "declaration-block-trailing-semicolon": null
+  }
+}
+```
+
 ## [Changelog](CHANGELOG.md)
 
 ## [License](LICENSE)
