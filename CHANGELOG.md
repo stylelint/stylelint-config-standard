@@ -1,3 +1,7 @@
+# Head
+
+- Removed: `font-family-name-quotes`, `function-url-quotes` and `string-quotes` rules. 
+
 # 4.0.1
 
 - Fixed: include peerDependencies in `package.json` to expose compatibility.
