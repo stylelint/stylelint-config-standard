@@ -21,6 +21,7 @@ module.exports = {
     "comment-whitespace-inside": "always",
     "declaration-bang-space-after": "never",
     "declaration-bang-space-before": "always",
+    "declaration-block-no-ignored-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,
     "declaration-block-semicolon-newline-after": "always-multi-line",
     "declaration-block-semicolon-space-after": "always-single-line",
