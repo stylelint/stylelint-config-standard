@@ -1,6 +1,7 @@
 # Head
 
-- Removed: `font-family-name-quotes`, `function-url-quotes` and `string-quotes` rules. 
+- Removed: `font-family-name-quotes`, `function-url-quotes` and `string-quotes` rules.
+- Added: `declaration-block-no-ignored-properties` rule.
 
 # 4.0.1
 
