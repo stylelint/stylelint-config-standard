@@ -1,3 +1,9 @@
+# Head
+
+- Added: `at-rule-semicolon-newline-after` rule.
+- Added: `selector-type-case` rule.
+- Added: `unit-no-unknown` rule.
+
 # 5.0.0
 
 - Removed: `font-family-name-quotes`, `function-url-quotes` and `string-quotes` rules.
