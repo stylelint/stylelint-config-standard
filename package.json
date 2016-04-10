@@ -22,10 +22,10 @@
     "eslint": "^2.2.0",
     "eslint-config-stylelint": "^1.0.0",
     "npmpub": "^3.0.1",
-    "stylelint": "^5.3.0"
+    "stylelint": "^5.4.0"
   },
   "peerDependencies": {
-    "stylelint": "^5.3.0"
+    "stylelint": "^5.4.0"
   },
   "scripts": {
     "ava": "ava --verbose \"__tests__/**/*.js\"",

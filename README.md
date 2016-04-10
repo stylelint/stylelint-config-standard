@@ -55,8 +55,7 @@ It favours flexibility over strictness for things like multi-line lists and sing
 }
 
 /* Flush single line comment */
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
+@media screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
 
   .selector {
@@ -113,19 +112,74 @@ If you've globally installed `stylelint-config-standard` using the `-g` flag, th
 
 ### Extending the config
 
-Simply add a `"rules"` key to your config and add your overrides there.
+Simply add a `"rules"` key to your config, then add your overrides and additions there.
 
-For example, to change the `indentation` to tabs and turn off the `number-leading-zero` rule:
+For example, to whitelist specific units, change the `indentation` to tabs and turn off the `number-leading-zero` rule:
 
 ```json
 {
   "extends": "stylelint-config-standard",
   "rules": {
     "indentation": "tab",
-    "number-leading-zero": null
+    "number-leading-zero": null,
+    "unit-whitelist": ["em", "rem", "s"]
   }
 }
 ```
+
+#### Suggested additions
+
+`stylelint-config-standard` is a great foundation for your own config. You can extend it create a tailored and much stricter config:
+
+- Specify what quotes must be used using:
+  - [`font-family-name-quotes`](https://github.com/stylelint/stylelint/blob/master/src/rules/font-family-name-quotes/README.md)
+  - [`function-url-quotes`](https://github.com/stylelint/stylelint/blob/master/src/rules/function-url-quotes/README.md)
+  - [`string-quotes`](https://github.com/stylelint/stylelint/blob/master/src/rules/string-quotes/README.md)
+- Specify the order of properties using:
+  - [`declaration-block-properties-order`](https://github.com/stylelint/stylelint/blob/master/src/rules/declaration-block-properties-order/README.md)
+- If you use `autoprefixer` you'll want to disallow vendor prefixes using:
+  - [`at-rule-no-vendor-prefix`](https://github.com/stylelint/stylelint/blob/master/src/rules/at-rule-no-vendor-prefix/README.md)
+  - [`media-feature-name-no-vendor-prefix`](https://github.com/stylelint/stylelint/blob/master/src/rules/media-feature-name-no-vendor-prefix/README.md)
+  - [`property-no-vendor-prefix`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-no-vendor-prefix/README.md)
+  - [`selector-no-vendor-prefix`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-vendor-prefix/README.md)
+  - [`value-no-vendor-prefix`](https://github.com/stylelint/stylelint/blob/master/src/rules/value-no-vendor-prefix/README.md)
+- Control specificity using:
+  - [`max-nesting-depth`](https://github.com/stylelint/stylelint/blob/master/src/rules/max-nesting-depth/README.md)
+  - [`selector-max-specificity`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-max-specificity/README.md)
+- Specify acceptable selector types, units, properties and functions using:
+  - [`color-named`](https://github.com/stylelint/stylelint/blob/master/src/rules/color-named/README.md)
+  - [`color-no-hex`](https://github.com/stylelint/stylelint/blob/master/src/rules/color-no-hex/README.md)
+  - [`declaration-no-important`](https://github.com/stylelint/stylelint/blob/master/src/rules/declaration-no-important/README.md)
+  - [`function-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/function-whitelist/README.md)
+  - [`property-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-blacklist/README.md)
+  - [`property-unit-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-unit-blacklist/README.md)
+  - [`property-unit-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-unit-whitelist/README.md)
+  - [`property-value-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-value-blacklist/README.md)
+  - [`property-value-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-value-whitelist/README.md)
+  - [`selector-no-attribute`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-attribute/README.md)
+  - [`selector-no-combinator`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-combinator/README.md)
+  - [`selector-no-id`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-id/README.md)
+  - [`selector-no-type`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-type/README.md)
+  - [`selector-no-universal`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-universal/README.md)
+  - [`unit-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-blacklist/README.md)
+  - [`unit-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-blacklist/README.md)
+- Specify acceptable naming patterns using:
+  - [`custom-media-pattern`](https://github.com/stylelint/stylelint/blob/master/src/rules/custom-media-pattern/README.md)
+  - [`custom-property-pattern`](https://github.com/stylelint/stylelint/blob/master/src/rules/custom-property-pattern/README.md)
+  - [`selector-class-pattern`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-class-pattern/README.md)
+  - [`selector-id-pattern`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-id-pattern/README.md)
+- Specify a notation when there are one or more valid representations using:
+  - [`font-weight-notation`](https://github.com/stylelint/stylelint/blob/master/src/rules/font-weight-notation/README.md)
+- Specify the acceptable use of custom properties using:
+  - [`custom-property-no-outside-root`](https://github.com/stylelint/stylelint/blob/master/src/rules/custom-property-no-outside-root/README.md)
+  - [`selector-root-no-composition`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-root-no-composition/README.md)
+- Specify if Data URIs must or must not be used using:
+  - [`function-url-data-uris`](https://github.com/stylelint/stylelint/blob/master/src/rules/function-url-data-uris/README.md)
+- Specify a maximum line length using:
+  - [`max-line-length`](https://github.com/stylelint/stylelint/blob/master/src/rules/max-line-length/README.md)
+- Catch possible mistakes related to your targeted browsers using:
+  - [`no-browser-hacks`](https://github.com/stylelint/stylelint/blob/master/src/rules/no-browser-hacks/README.md)
+  - [`no-unsupported-browser-features`](https://github.com/stylelint/stylelint/blob/master/src/rules/no-unsupported-browser-features/README.md)
 
 ### Using the config with SugarSS syntax
 

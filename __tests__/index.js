@@ -3,7 +3,10 @@ import stylelint from "stylelint"
 import test from "ava"
 
 const validCss = (
-`/**
+`@import url(x.css);
+@import url(y.css);
+
+/**
  * Multi-line comment
  */
 
@@ -43,8 +46,7 @@ const validCss = (
 }
 
 /* Flush single line comment */
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
+@media screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
 
   .selector {
