@@ -137,7 +137,7 @@ For example, to whitelist specific units, change the `indentation` to tabs and t
   - [`string-quotes`](https://github.com/stylelint/stylelint/blob/master/src/rules/string-quotes/README.md)
 - Specify the order of properties using:
   - [`declaration-block-properties-order`](https://github.com/stylelint/stylelint/blob/master/src/rules/declaration-block-properties-order/README.md)
-- If you use `autoprefixer` you'll want to disallow vendor prefixes using:
+- If you use [`autoprefixer`](https://github.com/postcss/autoprefixer) you'll want to disallow vendor prefixes using:
   - [`at-rule-no-vendor-prefix`](https://github.com/stylelint/stylelint/blob/master/src/rules/at-rule-no-vendor-prefix/README.md)
   - [`media-feature-name-no-vendor-prefix`](https://github.com/stylelint/stylelint/blob/master/src/rules/media-feature-name-no-vendor-prefix/README.md)
   - [`property-no-vendor-prefix`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-no-vendor-prefix/README.md)
