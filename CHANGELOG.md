@@ -1,4 +1,4 @@
-# Head
+# 6.0.0
 
 - Added: `at-rule-name-case` rule.
 - Added: `at-rule-semicolon-newline-after` rule.
