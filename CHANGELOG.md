@@ -1,7 +1,13 @@
 # Head
 
+- Added: `at-rule-name-case` rule.
 - Added: `at-rule-semicolon-newline-after` rule.
+- Added: `function-name-case` rule.
+- Added: `property-case` rule.
+- Added: `selector-pseudo-class-case` rule.
+- Added: `selector-pseudo-element-case` rule.
 - Added: `selector-type-case` rule.
+- Added: `unit-case` rule.
 - Added: `unit-no-unknown` rule.
 
 # 5.0.0
