@@ -1,5 +1,6 @@
 # Head
 
+- Added: `at-rule-name-space-after` rule.
 - Added: `function-max-empty-lines` rule.
 - Added: `no-extra-semicolons` rule.
 - Added: `selector-attribute-brackets-space-inside` rule.

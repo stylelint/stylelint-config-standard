@@ -58,7 +58,8 @@ It favours flexibility over strictness for things like multi-line lists and sing
 }
 
 /* Flush single line comment */
-@media screen and (min-resolution: 192dpi),
+@media
+  screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
 
   .selector {
