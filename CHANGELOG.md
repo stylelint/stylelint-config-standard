@@ -1,3 +1,15 @@
+# Head
+
+- Added: `function-max-empty-lines` rule.
+- Added: `no-extra-semicolons` rule.
+- Added: `selector-attribute-brackets-space-inside` rule.
+- Added: `selector-attribute-operator-space-after` rule.
+- Added: `selector-attribute-operator-space-before` rule.
+- Added: `selector-max-empty-lines` rule.
+- Added: `selector-pseudo-class-parentheses-space-inside` rule.
+- Added: `selector-pseudo-element-no-unknown` rule.
+- Added: `shorthand-property-no-redundant-values` rule.
+
 # 6.0.0
 
 - Added: `at-rule-name-case` rule.

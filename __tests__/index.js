@@ -20,7 +20,7 @@ const validCss = (
 }
 
 .selector-a,
-.selector-b {
+.selector-b:not(:first-child) {
   padding: 10px !important;
   top: calc(calc(1em * 2) / 3);
 }
