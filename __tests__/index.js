@@ -20,7 +20,7 @@ const validCss = (
 }
 
 .selector-a,
-.selector-b {
+.selector-b:not(:first-child) {
   padding: 10px !important;
   top: calc(calc(1em * 2) / 3);
 }
@@ -46,7 +46,8 @@ const validCss = (
 }
 
 /* Flush single line comment */
-@media screen and (min-resolution: 192dpi),
+@media
+  screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
 
   .selector {

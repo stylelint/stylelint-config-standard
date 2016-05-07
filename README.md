@@ -15,6 +15,9 @@ It favours flexibility over strictness for things like multi-line lists and sing
 ## Example
 
 ```css
+@import url(x.css);
+@import url(y.css);
+
 /**
  * Multi-line comment
  */
@@ -29,7 +32,7 @@ It favours flexibility over strictness for things like multi-line lists and sing
 }
 
 .selector-a,
-.selector-b {
+.selector-b:not(:first-child) {
   padding: 10px !important;
   top: calc(calc(1em * 2) / 3);
 }
@@ -50,12 +53,13 @@ It favours flexibility over strictness for things like multi-line lists and sing
 @media (min-orientation: portrait), projection and (color) {
   .selector-i + .selector-ii {
     background: color(rgb(0, 0, 0) lightness(50%));
-    font-family: helvetica, arial, sans-serif;
+    font-family: helvetica, "arial black", sans-serif;
   }
 }
 
 /* Flush single line comment */
-@media screen and (min-resolution: 192dpi),
+@media
+  screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
 
   .selector {
@@ -81,7 +85,6 @@ It favours flexibility over strictness for things like multi-line lists and sing
     background-image: url(x.svg);
   }
 }
-
 ```
 
 *Note: the config is tested against this example, as such the example contains plenty of CSS syntax, formatting and features.*
@@ -146,9 +149,10 @@ For example, to whitelist specific units, change the `indentation` to tabs and t
 - Control specificity using:
   - [`max-nesting-depth`](https://github.com/stylelint/stylelint/blob/master/src/rules/max-nesting-depth/README.md)
   - [`selector-max-specificity`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-max-specificity/README.md)
-- Specify acceptable selector types, units, properties and functions using:
+- Specify acceptable selector types, units, properties, functions and words in comments using:
   - [`color-named`](https://github.com/stylelint/stylelint/blob/master/src/rules/color-named/README.md)
   - [`color-no-hex`](https://github.com/stylelint/stylelint/blob/master/src/rules/color-no-hex/README.md)
+  - [`comment-word-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/comment-word-blacklist/README.md)
   - [`declaration-no-important`](https://github.com/stylelint/stylelint/blob/master/src/rules/declaration-no-important/README.md)
   - [`function-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/function-whitelist/README.md)
   - [`property-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-blacklist/README.md)
@@ -159,6 +163,7 @@ For example, to whitelist specific units, change the `indentation` to tabs and t
   - [`selector-no-attribute`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-attribute/README.md)
   - [`selector-no-combinator`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-combinator/README.md)
   - [`selector-no-id`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-id/README.md)
+  - [`selector-no-qualifying-type`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-qualifying-type/README.md)
   - [`selector-no-type`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-type/README.md)
   - [`selector-no-universal`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-universal/README.md)
   - [`unit-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-blacklist/README.md)
