@@ -1,4 +1,4 @@
-# Head
+# 8.0.0
 
 - Added: `keyframe-declaration-no-important` rule.
 - Added: `selector-pseudo-class-no-unknown` rule.
