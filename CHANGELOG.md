@@ -1,3 +1,9 @@
+# Head
+
+- Added: `keyframe-declaration-no-important` rule.
+- Added: `selector-pseudo-class-no-unknown` rule.
+- Added: `selector-type-no-unknown` rule.
+
 # 7.0.0
 
 - Added: `at-rule-name-space-after` rule.
