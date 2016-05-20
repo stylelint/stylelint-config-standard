@@ -148,6 +148,7 @@ For example, to whitelist specific units, change the `indentation` to tabs and t
   - [`value-no-vendor-prefix`](https://github.com/stylelint/stylelint/blob/master/src/rules/value-no-vendor-prefix/README.md)
 - Control specificity using:
   - [`max-nesting-depth`](https://github.com/stylelint/stylelint/blob/master/src/rules/max-nesting-depth/README.md)
+  - [`selector-max-compound-selectors`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-max-compound-selectors/README.md)
   - [`selector-max-specificity`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-max-specificity/README.md)
 - Specify acceptable selector types, units, properties, functions and words in comments using:
   - [`color-named`](https://github.com/stylelint/stylelint/blob/master/src/rules/color-named/README.md)
