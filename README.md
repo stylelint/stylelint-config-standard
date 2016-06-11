@@ -161,6 +161,7 @@ For example, to whitelist specific units, change the `indentation` to tabs and t
   - [`property-unit-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-unit-whitelist/README.md)
   - [`property-value-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-value-blacklist/README.md)
   - [`property-value-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-value-whitelist/README.md)
+  - [`property-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-whitelist/README.md)
   - [`selector-attribute-operator-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-attribute-operator-blacklist/README.md)
   - [`selector-attribute-operator-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-attribute-operator-whitelist/README.md)
   - [`selector-no-attribute`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-attribute/README.md)
