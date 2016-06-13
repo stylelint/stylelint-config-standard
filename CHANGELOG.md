@@ -1,4 +1,4 @@
-# Head
+# 9.0.0
 
 - Removed: `number-zero-length-no-unit` rule.
 - Added: `length-zero-no-unit` rule.
