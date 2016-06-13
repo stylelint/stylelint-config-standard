@@ -1,3 +1,8 @@
+# Head
+
+- Removed: `number-zero-length-no-unit` rule.
+- Added: `length-zero-no-unit` rule.
+
 # 8.0.0
 
 - Added: `keyframe-declaration-no-important` rule.
