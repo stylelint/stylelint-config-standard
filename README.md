@@ -117,12 +117,18 @@ If you've globally installed `stylelint-config-standard` using the `-g` flag, th
 
 Simply add a `"rules"` key to your config, then add your overrides and additions there.
 
-For example, to whitelist specific units, change the `indentation` to tabs and turn off the `number-leading-zero` rule:
+For example, to use the `ignoreAtRules` option of `at-rule-no-unknown`, change the `indentation` to tabs, turn off the `number-leading-zero` rule and whitelist specific units:
 
 ```json
 {
   "extends": "stylelint-config-standard",
   "rules": {
+    "at-rule-no-unknown": [ true, {
+      "ignoreAtRules": [
+        "include",
+        "mixin"
+      ]
+    }],
     "indentation": "tab",
     "number-leading-zero": null,
     "unit-whitelist": ["em", "rem", "s"]
