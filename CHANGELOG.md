@@ -1,4 +1,4 @@
-# Head
+# 10.0.0
 
 - Changed: `indentation` now uses the `indentInsideParens: "once"` option.
 - Added: `at-rule-no-unknown` rule.
