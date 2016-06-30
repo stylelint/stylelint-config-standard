@@ -1,3 +1,9 @@
+# Head
+
+- Changed: `indentation` now uses the `indentInsideParens: "once"` option.
+- Added: `at-rule-no-unknown` rule.
+- Added: `no-empty-source` rule.
+
 # 9.0.0
 
 - Removed: `number-zero-length-no-unit` rule.
