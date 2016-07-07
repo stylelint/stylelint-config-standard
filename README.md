@@ -143,6 +143,7 @@ For example, to use the `ignoreAtRules` option of `at-rule-no-unknown`, change t
 - Specify what quotes must be used using:
   - [`font-family-name-quotes`](https://github.com/stylelint/stylelint/blob/master/src/rules/font-family-name-quotes/README.md)
   - [`function-url-quotes`](https://github.com/stylelint/stylelint/blob/master/src/rules/function-url-quotes/README.md)
+  - [`selector-attribute-quotes`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-attribute-quotes/README.md)
   - [`string-quotes`](https://github.com/stylelint/stylelint/blob/master/src/rules/string-quotes/README.md)
 - Specify the order of properties using:
   - [`declaration-block-properties-order`](https://github.com/stylelint/stylelint/blob/master/src/rules/declaration-block-properties-order/README.md)
@@ -191,8 +192,9 @@ For example, to use the `ignoreAtRules` option of `at-rule-no-unknown`, change t
 - Specify the acceptable use of custom properties using:
   - [`custom-property-no-outside-root`](https://github.com/stylelint/stylelint/blob/master/src/rules/custom-property-no-outside-root/README.md)
   - [`selector-root-no-composition`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-root-no-composition/README.md)
-- Specify if Data URIs must or must not be used using:
+- Specify what types of URLs are allowed using:
   - [`function-url-data-uris`](https://github.com/stylelint/stylelint/blob/master/src/rules/function-url-data-uris/README.md)
+  - [`function-url-no-scheme-relative`](https://github.com/stylelint/stylelint/blob/master/src/rules/function-url-no-scheme-relative/README.md)
 - Specify a maximum line length using:
   - [`max-line-length`](https://github.com/stylelint/stylelint/blob/master/src/rules/max-line-length/README.md)
 - Catch possible mistakes related to your targeted browsers using:
