@@ -159,6 +159,7 @@ For example, to use the `ignoreAtRules` option of `at-rule-no-unknown`, change t
   - [`selector-max-specificity`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-max-specificity/README.md)
 - Specify acceptable selector types, units, properties, functions and words in comments using:
   - [`at-rule-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/at-rule-blacklist/README.md)
+  - [`at-rule-no-unknown`](https://github.com/stylelint/stylelint/blob/master/src/rules/at-rule-no-unknown/README.md)
   - [`at-rule-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/at-rule-whitelist/README.md)
   - [`color-named`](https://github.com/stylelint/stylelint/blob/master/src/rules/color-named/README.md)
   - [`color-no-hex`](https://github.com/stylelint/stylelint/blob/master/src/rules/color-no-hex/README.md)
