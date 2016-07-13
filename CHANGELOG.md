@@ -1,4 +1,4 @@
-# Head
+# 11.0.0
 
 - Removed: `at-rule-no-unknown` rule.
 - Removed: `media-feature-parentheses-space-inside` rule.
