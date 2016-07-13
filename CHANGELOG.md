@@ -1,3 +1,12 @@
+# Head
+
+- Removed: `at-rule-no-unknown` rule.
+- Removed: `media-feature-parentheses-space-inside` rule.
+- Removed: `no-missing-eof-newline` rule.
+- Changed: `indentation` no longer uses the `indentInsideParens: "once"` option, as this is the default behaviour in `stylelint@7.0.0`.
+- Added: `media-feature-parentheses-space-inside` rule.
+- Added: `no-missing-end-of-source-newline` rule.
+
 # 10.0.0
 
 - Changed: `indentation` now uses the `indentInsideParens: "once"` option.
