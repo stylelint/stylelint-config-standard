@@ -172,6 +172,7 @@ For example, to add the `at-rule-no-unknown` rule and use its `ignoreAtRules` op
   - [`function-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/function-blacklist/README.md)
   - [`function-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/function-whitelist/README.md)
   - [`property-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-blacklist/README.md)
+  - [`property-no-unknown`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-no-unknown/README.md)
   - [`property-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-whitelist/README.md)
   - [`selector-attribute-operator-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-attribute-operator-blacklist/README.md)
   - [`selector-attribute-operator-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-attribute-operator-whitelist/README.md)
