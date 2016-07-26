@@ -49,7 +49,6 @@ const validCss = (
 @media
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-
   .selector {
     background-image:
       repeating-linear-gradient(

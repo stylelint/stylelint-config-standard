@@ -1,3 +1,12 @@
+# Head
+
+- Added: `block-closing-brace-empty-line-before` rule.
+- Added: `comment-no-empty` rule.
+- Added: `custom-property-empty-line-before` rule.
+- Added: `declaration-empty-line-before` rule.
+- Added: `media-feature-name-case` rule.
+- Added: `rule-nested-empty-line-before` rule.
+
 # 11.0.0
 
 - Removed: `at-rule-no-unknown` rule.
