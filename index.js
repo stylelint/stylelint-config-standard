@@ -25,8 +25,8 @@ module.exports = {
     "comment-no-empty": true,
     "comment-whitespace-inside": "always",
     "custom-property-empty-line-before": [ "always", {
-      except: [ "after-comment", "after-custom-property", "first-nested" ],
-      ignore: ["inside-single-line-block"],
+      except: [ "after-custom-property", "first-nested" ],
+      ignore: [ "after-comment", "inside-single-line-block" ],
     } ],
     "declaration-bang-space-after": "never",
     "declaration-bang-space-before": "always",
@@ -41,8 +41,8 @@ module.exports = {
     "declaration-colon-space-after": "always-single-line",
     "declaration-colon-space-before": "never",
     "declaration-empty-line-before": [ "always", {
-      except: [ "after-comment", "after-declaration", "first-nested" ],
-      ignore: ["inside-single-line-block"],
+      except: [ "after-declaration", "first-nested" ],
+      ignore: [ "after-comment", "inside-single-line-block" ],
     } ],
     "function-calc-no-unspaced-operator": true,
     "function-comma-newline-after": "always-multi-line",
