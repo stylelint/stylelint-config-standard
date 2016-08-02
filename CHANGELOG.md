@@ -1,4 +1,4 @@
-# Head
+# 12.0.0
 
 - Changed: `at-rule-empty-line-before` now uses the `blockless-after-same-name-blockless` `except` option, rather than the `blockless-group` one.
 - Added: `block-closing-brace-empty-line-before` rule.
