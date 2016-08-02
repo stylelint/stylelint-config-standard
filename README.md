@@ -61,7 +61,6 @@ It favours flexibility over strictness for things like multi-line lists and sing
 @media
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-
   .selector {
     background-image:
       repeating-linear-gradient(
@@ -182,6 +181,8 @@ For example, to add the `at-rule-no-unknown` rule and use its `ignoreAtRules` op
   - [`selector-no-qualifying-type`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-qualifying-type/README.md)
   - [`selector-no-type`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-type/README.md)
   - [`selector-no-universal`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-no-universal/README.md)
+  - [`selector-pseudo-class-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-pseudo-class-blacklist/README.md)
+  - [`selector-pseudo-class-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-pseudo-class-whitelist/README.md)
   - [`unit-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-blacklist/README.md)
   - [`unit-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-blacklist/README.md)
 - Specify acceptable naming patterns using:
@@ -189,6 +190,7 @@ For example, to add the `at-rule-no-unknown` rule and use its `ignoreAtRules` op
   - [`custom-property-pattern`](https://github.com/stylelint/stylelint/blob/master/src/rules/custom-property-pattern/README.md)
   - [`selector-class-pattern`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-class-pattern/README.md)
   - [`selector-id-pattern`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-id-pattern/README.md)
+  - [`selector-nested-pattern`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-nested-pattern/README.md)
 - Specify a notation when there are one or more valid representations using:
   - [`font-weight-notation`](https://github.com/stylelint/stylelint/blob/master/src/rules/font-weight-notation/README.md)
 - Specify the acceptable use of custom properties using:
