@@ -190,6 +190,7 @@ For example, to add the `at-rule-no-unknown` rule and use its `ignoreAtRules` op
   - [`custom-property-pattern`](https://github.com/stylelint/stylelint/blob/master/src/rules/custom-property-pattern/README.md)
   - [`selector-class-pattern`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-class-pattern/README.md)
   - [`selector-id-pattern`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-id-pattern/README.md)
+  - [`selector-nested-pattern`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-nested-pattern/README.md)
 - Specify a notation when there are one or more valid representations using:
   - [`font-weight-notation`](https://github.com/stylelint/stylelint/blob/master/src/rules/font-weight-notation/README.md)
 - Specify the acceptable use of custom properties using:
