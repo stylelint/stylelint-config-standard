@@ -20,7 +20,7 @@
   "devDependencies": {
     "ava": "^0.15.0",
     "eslint": "^3.1.1",
-    "eslint-config-stylelint": "^3.0.0",
+    "eslint-config-stylelint": "^4.0.0",
     "npmpub": "^3.0.1",
     "stylelint": "^7.1.0"
   },
