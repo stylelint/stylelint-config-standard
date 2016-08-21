@@ -90,8 +90,8 @@ It favours flexibility over strictness for things like multi-line lists and sing
 
 ## Installation
 
-```console
-$ npm install stylelint-config-standard
+```bash
+npm install stylelint-config-standard --save-dev
 ```
 
 ## Usage
