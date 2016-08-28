@@ -1,8 +1,10 @@
 # Head
 
 -   Added: `declaration-block-no-duplicate-properties` rule.
+-   Added: `declaration-block-no-redundant-longhand-properties` rule.
 -   Added: `media-feature-name-no-unknown` rule.
 -   Added: `property-no-unknown` rule.
+-   Added: `selector-descendant-combinator-no-non-space` rule.
 -   Added: `value-list-max-empty-lines` rule.
 
 # 12.0.0
