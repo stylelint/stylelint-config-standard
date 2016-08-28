@@ -1,4 +1,4 @@
-# Head
+# 13.0.0
 
 -   Added: `declaration-block-no-duplicate-properties` rule.
 -   Added: `declaration-block-no-redundant-longhand-properties` rule.

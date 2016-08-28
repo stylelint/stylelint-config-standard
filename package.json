@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-standard",
-  "version": "12.0.0",
+  "version": "13.0.0",
   "description": "Standard shareable config for stylelint",
   "keywords": [
     "stylelint",
