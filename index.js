@@ -40,7 +40,9 @@ module.exports = {
     "declaration-bang-space-after": "never",
     "declaration-bang-space-before": "always",
     "declaration-block-no-duplicate-properties": true,
-    "declaration-block-no-ignored-properties": true,
+    "declaration-block-no-ignored-properties": [ true, {
+      ignore: ["consecutive-duplicates-with-different-values"],
+    } ],
     "declaration-block-no-redundant-longhand-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,
     "declaration-block-semicolon-newline-after": "always-multi-line",
