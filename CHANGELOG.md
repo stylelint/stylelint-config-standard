@@ -1,3 +1,7 @@
+# HEAD
+
+-   Fixed: `declaration-block-no-duplicate-properties` now uses the `consecutive-duplicates-with-different-values` `ignore` option. 
+
 # 13.0.0
 
 -   Added: `declaration-block-no-duplicate-properties` rule.
