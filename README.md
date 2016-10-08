@@ -170,6 +170,8 @@ For example, to change the `indentation` to tabs, turn off the `number-leading-z
     -   [`function-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/function-blacklist/README.md)
     -   [`function-url-scheme-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/function-url-scheme-whitelist/README.md)
     -   [`function-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/function-whitelist/README.md)
+    -   [`media-feature-name-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/media-feature-name-blacklist/README.md)
+    -   [`media-feature-name-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/media-feature-name-whitelist/README.md)
     -   [`property-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-blacklist/README.md)
     -   [`property-whitelist`](https://github.com/stylelint/stylelint/blob/master/src/rules/property-whitelist/README.md)
     -   [`selector-attribute-operator-blacklist`](https://github.com/stylelint/stylelint/blob/master/src/rules/selector-attribute-operator-blacklist/README.md)
