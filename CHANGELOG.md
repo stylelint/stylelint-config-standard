@@ -1,3 +1,7 @@
+# Head
+
+-   Added: `selector-no-empty` rule.
+
 # 13.0.2
 
 -   Fixed: the `ignore: ["consecutive-duplicates-with-different-values"` optional secondary option was wrongly assigned to `declaration-block-no-ignored-properties`.
