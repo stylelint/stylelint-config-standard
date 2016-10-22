@@ -1,4 +1,4 @@
-# Head
+# 14.0.0
 
 -   Added: `selector-no-empty` rule.
 
