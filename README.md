@@ -208,12 +208,22 @@ For example, to change the `indentation` to tabs, turn off the `number-leading-z
 
 ### Using the config with SugarSS syntax
 
-The config is broadly compatible with [SugarSS](https://github.com/postcss/sugarss) syntax. You *will* need to turn off the `declaration-block-trailing-semicolon` rule, as so:
+The config is broadly compatible with [SugarSS](https://github.com/postcss/sugarss) syntax. You *will* need to turn off the rules that check braces and semicolons, as so:
 
 ```json
 {
   "extends": "stylelint-config-standard",
   "rules": {
+    "block-closing-brace-empty-line-before": null,
+    "block-closing-brace-newline-after": null,
+    "block-closing-brace-newline-before": null,
+    "block-closing-brace-space-before": null,
+    "block-opening-brace-newline-after": null,
+    "block-opening-brace-space-after": null,
+    "block-opening-brace-space-before": null,
+    "declaration-block-semicolon-newline-after": null,
+    "declaration-block-semicolon-space-after": null,
+    "declaration-block-semicolon-space-before": null,
     "declaration-block-trailing-semicolon": null
   }
 }
