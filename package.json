@@ -18,7 +18,7 @@
     "index.js"
   ],
   "devDependencies": {
-    "ava": "^0.16.0",
+    "ava": "^0.17.0",
     "eslint": "^3.1.1",
     "eslint-config-stylelint": "^5.0.0",
     "npm-run-all": "^3.0.0",
