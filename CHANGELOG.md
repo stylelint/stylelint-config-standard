@@ -1,3 +1,10 @@
+# Head
+
+-   Removed: `declaration-block-no-ignored-properties` rule.
+-   Removed: `media-feature-no-missing-punctuation` rule.
+-   Removed: `selector-no-empty` rule.
+-   Added: `font-family-no-duplicate-names` rule.
+
 # 14.0.0
 
 -   Added: `selector-no-empty` rule.
