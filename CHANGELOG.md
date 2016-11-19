@@ -1,4 +1,4 @@
-# Head
+# 15.0.0
 
 -   Removed: `declaration-block-no-ignored-properties` rule.
 -   Removed: `media-feature-no-missing-punctuation` rule.
