@@ -1,6 +1,5 @@
 import config from "../"
 import stylelint from "stylelint"
-import test from "ava"
 
 const validCss = (
 `@import url(x.css);
@@ -82,7 +81,7 @@ const invalidCss = (
 
 `)
 
-test("no warnings with valid css", t => {
+it("Shows no warnings with valid css", () => {
   return stylelint.lint({
     code: validCss,
     config: config,
@@ -90,12 +89,12 @@ test("no warnings with valid css", t => {
   .then(data => {
     const { errored, results } = data
     const { warnings } = results[0]
-    t.falsy(errored, "no errored")
-    t.is(warnings.length, 0, "flags no warnings")
+    expect(errored).toBeFalsy()
+    expect(warnings.length).toBe(0)
   })
 })
 
-test("a warning with invalid css", t => {
+it("Shows a warning with invalid css", () => {
   return stylelint.lint({
     code: invalidCss,
     config: config,
@@ -103,8 +102,8 @@ test("a warning with invalid css", t => {
   .then(data => {
     const { errored, results } = data
     const { warnings } = results[0]
-    t.truthy(errored, "errored")
-    t.is(warnings.length, 1, "flags one warning")
-    t.is(warnings[0].text, "Expected a leading zero (number-leading-zero)", "correct warning text")
+    expect(errored).toBeTruthy()
+    expect(warnings.length).toBe(1)
+    expect(warnings[0].text).toBe("Expected a leading zero (number-leading-zero)")
   })
 })
