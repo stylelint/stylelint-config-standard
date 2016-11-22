@@ -81,29 +81,54 @@ const invalidCss = (
 
 `)
 
-it("Shows no warnings with valid css", () => {
-  return stylelint.lint({
-    code: validCss,
-    config: config,
+describe("flags no warnings with valid css", () => {
+  let result
+
+  beforeEach(() => {
+    result = stylelint.lint({
+      code: validCss,
+      config: config,
+    })
   })
-  .then(data => {
-    const { errored, results } = data
-    const { warnings } = results[0]
-    expect(errored).toBeFalsy()
-    expect(warnings.length).toBe(0)
+
+  it("did not error", () => {
+    return result.then(data => (
+      expect(data.errored).toBeFalsy()
+    ))
+  })
+
+  it("flags no warnings", () => {
+    return result.then(data => (
+      expect(data.results[0].warnings.length).toBe(0)
+    ))
   })
 })
 
-it("Shows a warning with invalid css", () => {
-  return stylelint.lint({
-    code: invalidCss,
-    config: config,
+describe("flags warnings with invalid css", () => {
+  let result
+
+  beforeEach(() => {
+    result = stylelint.lint({
+      code: invalidCss,
+      config: config,
+    })
   })
-  .then(data => {
-    const { errored, results } = data
-    const { warnings } = results[0]
-    expect(errored).toBeTruthy()
-    expect(warnings.length).toBe(1)
-    expect(warnings[0].text).toBe("Expected a leading zero (number-leading-zero)")
+
+  it("did error", () => {
+    return result.then(data => (
+      expect(data.errored).toBeTruthy()
+    ))
+  })
+
+  it("flags one warning", () => {
+    return result.then(data => (
+      expect(data.results[0].warnings.length).toBe(1)
+    ))
+  })
+
+  it("correct warning text", () => {
+    return result.then(data => (
+      expect(data.results[0].warnings[0].text).toBe("Expected a leading zero (number-leading-zero)")
+    ))
   })
 })
