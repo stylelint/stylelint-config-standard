@@ -18,8 +18,6 @@
     "index.js"
   ],
   "devDependencies": {
-    "babel-jest": "^17.0.2",
-    "babel-preset-es2015": "^6.18.0",
     "eslint": "^3.1.1",
     "eslint-config-stylelint": "^5.0.0",
     "jest": "^17.0.3",
@@ -42,11 +40,6 @@
     "test": "jest",
     "watch": "jest --watch"
   },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
-  },
   "eslintConfig": {
     "extends": [
       "stylelint"
@@ -56,10 +49,8 @@
     }
   },
   "jest": {
-    "verbose": true,
-    "transformIgnorePatterns": [
-      "/node_modules"
-    ]
+    "testEnvironment": "node",
+    "verbose": true
   },
   "remarkConfig": {
     "presets": [
