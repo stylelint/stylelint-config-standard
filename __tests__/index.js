@@ -1,5 +1,5 @@
-import config from "../"
-import stylelint from "stylelint"
+const config = require("../")
+const stylelint = require("stylelint")
 
 const validCss = (
 `@import url(x.css);
