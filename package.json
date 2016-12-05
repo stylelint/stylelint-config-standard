@@ -43,10 +43,7 @@
   "eslintConfig": {
     "extends": [
       "stylelint"
-    ],
-    "env": {
-      "jest": true
-    }
+    ]
   },
   "jest": {
     "testEnvironment": "node",
