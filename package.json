@@ -19,7 +19,7 @@
   ],
   "devDependencies": {
     "eslint": "^3.1.1",
-    "eslint-config-stylelint": "^5.0.0",
+    "eslint-config-stylelint": "^6.0.0",
     "jest": "^17.0.3",
     "npm-run-all": "^3.0.0",
     "npmpub": "^3.0.1",
@@ -43,10 +43,7 @@
   "eslintConfig": {
     "extends": [
       "stylelint"
-    ],
-    "env": {
-      "jest": true
-    }
+    ]
   },
   "jest": {
     "testEnvironment": "node",
