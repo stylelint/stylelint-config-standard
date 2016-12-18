@@ -1,3 +1,7 @@
+# Head
+
+-   Fixed: URLs to stylelint rules within README.
+
 # 15.0.0
 
 -   Removed: `declaration-block-no-ignored-properties` rule.
