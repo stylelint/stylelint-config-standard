@@ -12,6 +12,8 @@ It is derived from the common rules found within a handful of CSS styleguides, i
 
 It favours flexibility over strictness for things like multi-line lists and single-line rulesets, and tries to avoid potentially divisive rules.
 
+To see the rules that this config uses, please read the [config itself](./index.js).
+
 ## Example
 
 ```css
