@@ -145,8 +145,6 @@ For example, to change the `indentation` to tabs, turn off the `number-leading-z
     -   [`function-url-quotes`](https://github.com/stylelint/stylelint/blob/master/lib/rules/function-url-quotes/README.md)
     -   [`selector-attribute-quotes`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-attribute-quotes/README.md)
     -   [`string-quotes`](https://github.com/stylelint/stylelint/blob/master/lib/rules/string-quotes/README.md)
--   Specify the order of properties using:
-    -   [`declaration-block-properties-order`](https://github.com/stylelint/stylelint/blob/master/lib/rules/declaration-block-properties-order/README.md)
 -   If you use [`autoprefixer`](https://github.com/postcss/autoprefixer) you'll want to disallow vendor prefixes using:
     -   [`at-rule-no-vendor-prefix`](https://github.com/stylelint/stylelint/blob/master/lib/rules/at-rule-no-vendor-prefix/README.md)
     -   [`media-feature-name-no-vendor-prefix`](https://github.com/stylelint/stylelint/blob/master/lib/rules/media-feature-name-no-vendor-prefix/README.md)
@@ -196,17 +194,11 @@ For example, to change the `indentation` to tabs, turn off the `number-leading-z
     -   [`selector-nested-pattern`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-nested-pattern/README.md)
 -   Specify a notation when there are one or more valid representations using:
     -   [`font-weight-notation`](https://github.com/stylelint/stylelint/blob/master/lib/rules/font-weight-notation/README.md)
--   Specify the acceptable use of custom properties using:
-    -   [`custom-property-no-outside-root`](https://github.com/stylelint/stylelint/blob/master/lib/rules/custom-property-no-outside-root/README.md)
-    -   [`selector-root-no-composition`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-root-no-composition/README.md)
 -   Specify what types of URLs are allowed using:
     -   [`function-url-data-uris`](https://github.com/stylelint/stylelint/blob/master/lib/rules/function-url-data-uris/README.md)
     -   [`function-url-no-scheme-relative`](https://github.com/stylelint/stylelint/blob/master/lib/rules/function-url-no-scheme-relative/README.md)
 -   Specify a maximum line length using:
     -   [`max-line-length`](https://github.com/stylelint/stylelint/blob/master/lib/rules/max-line-length/README.md)
--   Catch possible mistakes related to your targeted browsers using:
-    -   [`no-browser-hacks`](https://github.com/stylelint/stylelint/blob/master/lib/rules/no-browser-hacks/README.md)
-    -   [`no-unsupported-browser-features`](https://github.com/stylelint/stylelint/blob/master/lib/rules/no-unsupported-browser-features/README.md)
 
 ### Using the config with SugarSS syntax
 
