@@ -1,4 +1,4 @@
-# Head
+# 16.0.0
 
 -   Changed: replaced the deprecated `rule-nested-empty-line-before` and `rule-non-nested-empty-line-before` rules with the `rule-empty-line-before` rule.
 
