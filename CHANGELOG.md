@@ -1,3 +1,7 @@
+# Head
+
+-   Changed: replaced the deprecated `rule-nested-empty-line-before` and `rule-non-nested-empty-line-before` rules with the `rule-empty-line-before` rule.
+
 # 15.0.1
 
 -   Fixed: URLs to stylelint rules within README.

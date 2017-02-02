@@ -26,10 +26,10 @@
     "remark-cli": "^2.0.0",
     "remark-preset-lint-consistent": "^1.0.0",
     "remark-preset-lint-recommended": "^1.0.0",
-    "stylelint": "^7.6.0"
+    "stylelint": "^7.8.0"
   },
   "peerDependencies": {
-    "stylelint": "^7.6.0"
+    "stylelint": "^7.8.0"
   },
   "scripts": {
     "lint:js": "eslint . --ignore-path .gitignore",
