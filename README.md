@@ -184,8 +184,8 @@ For example, to change the `indentation` to tabs, turn off the `number-leading-z
     -   [`selector-no-universal`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-no-universal/README.md)
     -   [`selector-pseudo-class-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-class-blacklist/README.md)
     -   [`selector-pseudo-class-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-class-whitelist/README.md)
-    -   [`unit-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/property-blacklist/README.md)
-    -   [`unit-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/property-blacklist/README.md)
+    -   [`unit-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/unit-blacklist/README.md)
+    -   [`unit-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/unit-whitelist/README.md)
 -   Specify acceptable naming patterns using:
     -   [`custom-media-pattern`](https://github.com/stylelint/stylelint/blob/master/lib/rules/custom-media-pattern/README.md)
     -   [`custom-property-pattern`](https://github.com/stylelint/stylelint/blob/master/lib/rules/custom-property-pattern/README.md)
