@@ -20,7 +20,7 @@
   "devDependencies": {
     "eslint": "^3.1.1",
     "eslint-config-stylelint": "^6.0.0",
-    "jest": "^18.1.0",
+    "jest": "^19.0.0",
     "npm-run-all": "^4.0.0",
     "npmpub": "^3.0.1",
     "remark-cli": "^2.0.0",
