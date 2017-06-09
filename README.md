@@ -176,6 +176,7 @@ For example, to change the `indentation` to tabs, turn off the `number-leading-z
     -   [`property-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/property-whitelist/README.md)
     -   [`selector-attribute-operator-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-attribute-operator-blacklist/README.md)
     -   [`selector-attribute-operator-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-attribute-operator-whitelist/README.md)
+    -   [`selector-max-class`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-class/README.md)
     -   [`selector-no-attribute`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-no-attribute/README.md)
     -   [`selector-no-combinator`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-no-combinator/README.md)
     -   [`selector-no-id`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-no-id/README.md)
