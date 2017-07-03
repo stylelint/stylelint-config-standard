@@ -93,7 +93,9 @@ To see the rules that this config uses, please read the [config itself](./index.
 ## Installation
 
 ```bash
-npm install stylelint-config-standard --save-dev
+npm install --save-dev stylelint-config-standard
+# OR
+yarn add --dev stylelint-config-standard
 ```
 
 ## Usage
