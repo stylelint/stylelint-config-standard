@@ -138,7 +138,7 @@ For example, to change the `indentation` to tabs, turn off the `number-leading-z
 
 #### Suggested additions
 
-`stylelint-config-standard` is a great foundation for your own config. You can extend it create a tailored and much stricter config:
+`stylelint-config-standard` is a great foundation for your own config. You can extend it to create a tailored and much stricter config:
 
 -   Specify what quotes must be used using:
     -   [`font-family-name-quotes`](https://github.com/stylelint/stylelint/blob/master/lib/rules/font-family-name-quotes/README.md)
@@ -157,7 +157,6 @@ For example, to change the `indentation` to tabs, turn off the `number-leading-z
     -   [`selector-max-specificity`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-specificity/README.md)
 -   Specify acceptable selector types, units, properties, functions and words in comments using:
     -   [`at-rule-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/at-rule-blacklist/README.md)
-    -   [`at-rule-no-unknown`](https://github.com/stylelint/stylelint/blob/master/lib/rules/at-rule-no-unknown/README.md)
     -   [`at-rule-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/at-rule-whitelist/README.md)
     -   [`color-named`](https://github.com/stylelint/stylelint/blob/master/lib/rules/color-named/README.md)
     -   [`color-no-hex`](https://github.com/stylelint/stylelint/blob/master/lib/rules/color-no-hex/README.md)
