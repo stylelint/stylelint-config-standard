@@ -4,13 +4,15 @@
 
 > The standard shareable config for stylelint.
 
-Use it as is or as a foundation for your own config.
+Extends [`stylelint-config-recommended`](https://github.com/stylelint/stylelint-config-recommended).
 
-It is derived from the common rules found within a handful of CSS styleguides, including: [The Idiomatic CSS Principles](https://github.com/necolas/idiomatic-css),
+Turns on additional rules to enforce the common stylistic conventions found within a handful of CSS styleguides, including: [The Idiomatic CSS Principles](https://github.com/necolas/idiomatic-css),
 [GitHub's PrimerCSS Guidelines](http://primercss.io/guidelines/#scss),
 [Google's CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#CSS_Formatting_Rules), [Airbnb's Styleguide](https://github.com/airbnb/css#css), and [@mdo's Code Guide](http://codeguide.co/#css).
 
 It favours flexibility over strictness for things like multi-line lists and single-line rulesets, and tries to avoid potentially divisive rules.
+
+Use it as is or as a foundation for your own config.
 
 To see the rules that this config uses, please read the [config itself](./index.js).
 
