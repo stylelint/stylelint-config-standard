@@ -12,6 +12,7 @@ language: node_js
 # cache node modules
 cache:
   directories:
+    - $HOME/.npm
     - node_modules
 
 node_js:
@@ -19,5 +20,4 @@ node_js:
   - '6'
 
 before_install:
-  # remove outdated deps, assists with cache maintenance
-  - npm prune
+  - npm install -g npm@latest
