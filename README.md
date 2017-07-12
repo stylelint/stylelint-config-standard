@@ -4,13 +4,15 @@
 
 > The standard shareable config for stylelint.
 
-Use it as is or as a foundation for your own config.
+Extends [`stylelint-config-recommended`](https://github.com/stylelint/stylelint-config-recommended).
 
-It is derived from the common rules found within a handful of CSS styleguides, including: [The Idiomatic CSS Principles](https://github.com/necolas/idiomatic-css),
+Turns on additional rules to enforce the common stylistic conventions found within a handful of CSS styleguides, including: [The Idiomatic CSS Principles](https://github.com/necolas/idiomatic-css),
 [GitHub's PrimerCSS Guidelines](http://primercss.io/guidelines/#scss),
 [Google's CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#CSS_Formatting_Rules), [Airbnb's Styleguide](https://github.com/airbnb/css#css), and [@mdo's Code Guide](http://codeguide.co/#css).
 
 It favours flexibility over strictness for things like multi-line lists and single-line rulesets, and tries to avoid potentially divisive rules.
+
+Use it as is or as a foundation for your own config.
 
 To see the rules that this config uses, please read the [config itself](./index.js).
 
@@ -138,7 +140,7 @@ For example, to change the `indentation` to tabs, turn off the `number-leading-z
 
 #### Suggested additions
 
-`stylelint-config-standard` is a great foundation for your own config. You can extend it create a tailored and much stricter config:
+`stylelint-config-standard` is a great foundation for your own config. You can extend it to create a tailored and much stricter config:
 
 -   Specify what quotes must be used using:
     -   [`font-family-name-quotes`](https://github.com/stylelint/stylelint/blob/master/lib/rules/font-family-name-quotes/README.md)
@@ -157,7 +159,6 @@ For example, to change the `indentation` to tabs, turn off the `number-leading-z
     -   [`selector-max-specificity`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-specificity/README.md)
 -   Specify acceptable selector types, units, properties, functions and words in comments using:
     -   [`at-rule-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/at-rule-blacklist/README.md)
-    -   [`at-rule-no-unknown`](https://github.com/stylelint/stylelint/blob/master/lib/rules/at-rule-no-unknown/README.md)
     -   [`at-rule-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/at-rule-whitelist/README.md)
     -   [`color-named`](https://github.com/stylelint/stylelint/blob/master/lib/rules/color-named/README.md)
     -   [`color-no-hex`](https://github.com/stylelint/stylelint/blob/master/lib/rules/color-no-hex/README.md)
