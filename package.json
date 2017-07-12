@@ -17,6 +17,9 @@
   "files": [
     "index.js"
   ],
+  "dependencies": {
+    "stylelint-config-recommended": "^0.1.0"
+  },
   "devDependencies": {
     "eslint": "^4.1.0",
     "eslint-config-stylelint": "^6.0.0",
