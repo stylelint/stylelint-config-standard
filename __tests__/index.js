@@ -1,7 +1,7 @@
 "use strict"
 
-const fs = require("fs")
 const config = require("../")
+const fs = require("fs")
 const stylelint = require("stylelint")
 
 const validCss = fs.readFileSync("./__tests__/css-valid.css", "utf-8")
