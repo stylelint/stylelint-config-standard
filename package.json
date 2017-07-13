@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "eslint": "^4.1.0",
-    "eslint-config-stylelint": "^6.0.0",
+    "eslint-config-stylelint": "^7.0.0",
     "jest": "^20.0.0",
     "npm-run-all": "^4.0.0",
     "npmpub": "^3.0.1",
