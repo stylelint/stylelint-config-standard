@@ -1,3 +1,7 @@
+# Head
+
+-   Changed: now extends [`stylelint-config-recommended`](https://github.com/stylelint/stylelint-config-recommended), which turns on the `at-rule-no-unknown` rule. Therefore, if you use non-standard at-rules, like those introduced in SCSS and Less (e.g. `@extends`, `@includes` etc), be sure to [extend the config](README.md#extending-the-config) and make use of `at-rule-no-unknown`'s [`ignoreAtRules: []` secondary option](https://github.com/stylelint/stylelint/tree/master/lib/rules/at-rule-no-unknown#ignoreatrules-regex-string).
+
 # 16.0.0
 
 -   Changed: replaced the deprecated `rule-nested-empty-line-before` and `rule-non-nested-empty-line-before` rules with the `rule-empty-line-before` rule.
