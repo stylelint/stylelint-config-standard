@@ -199,7 +199,6 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
 -   Specify a notation when there are one or more valid representations using:
     -   [`font-weight-notation`](https://github.com/stylelint/stylelint/blob/master/lib/rules/font-weight-notation/README.md)
 -   Specify what types of URLs are allowed using:
-    -   [`function-url-data-uris`](https://github.com/stylelint/stylelint/blob/master/lib/rules/function-url-data-uris/README.md)
     -   [`function-url-no-scheme-relative`](https://github.com/stylelint/stylelint/blob/master/lib/rules/function-url-no-scheme-relative/README.md)
 -   Specify a maximum line length using:
     -   [`max-line-length`](https://github.com/stylelint/stylelint/blob/master/lib/rules/max-line-length/README.md)
