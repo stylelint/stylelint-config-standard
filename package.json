@@ -29,10 +29,10 @@
     "remark-cli": "^5.0.0",
     "remark-preset-lint-consistent": "^2.0.0",
     "remark-preset-lint-recommended": "^3.0.0",
-    "stylelint": "^8.3.0"
+    "stylelint": "^9.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^8.3.0"
+    "stylelint": "^8.3.0 || ^9.0.0"
   },
   "scripts": {
     "dry-release": "npmpub --dry --verbose",
