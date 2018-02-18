@@ -1,3 +1,7 @@
+# 18.1.0
+
+-   Added: `stylelint@9` to peer dependency range.
+
 # 18.0.0
 
 -   Changed: updated to [`stylelint-config-recommended@2.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/2.0.0).
