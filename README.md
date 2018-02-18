@@ -178,6 +178,8 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
     -   [`property-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/property-whitelist/README.md)
     -   [`selector-attribute-operator-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-attribute-operator-blacklist/README.md)
     -   [`selector-attribute-operator-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-attribute-operator-whitelist/README.md)
+    -   [`selector-combinator-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-combinator-blacklist/README.md)
+    -   [`selector-combinator-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-combinator-whitelist/README.md)
     -   [`selector-max-class`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-class/README.md)
     -   [`selector-max-attribute`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-attribute/README.md)
     -   [`selector-max-combinators`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-combinators/README.md)
@@ -187,6 +189,8 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
     -   [`selector-max-universal`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-universal/README.md)
     -   [`selector-pseudo-class-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-class-blacklist/README.md)
     -   [`selector-pseudo-class-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-class-whitelist/README.md)
+    -   [`selector-pseudo-element-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-element-blacklist/README.md)
+    -   [`selector-pseudo-element-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-element-whitelist/README.md)
     -   [`unit-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/unit-blacklist/README.md)
     -   [`unit-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/unit-whitelist/README.md)
 -   Specify acceptable naming patterns using:
