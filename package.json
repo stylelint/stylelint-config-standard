@@ -21,7 +21,7 @@
     "stylelint-config-recommended": "^2.1.0"
   },
   "devDependencies": {
-    "eslint": "^4.1.0",
+    "eslint": "^5.0.0",
     "eslint-config-stylelint": "^8.0.0",
     "jest": "^22.0.0",
     "jest-preset-stylelint": "^1.3.0",
