@@ -1,6 +1,6 @@
 # stylelint-config-standard
 
-[![NPM version](http://img.shields.io/npm/v/stylelint-config-standard.svg)](https://www.npmjs.org/package/stylelint-config-standard) [![Build Status](https://travis-ci.org/stylelint/stylelint-config-standard.svg?branch=master)](https://travis-ci.org/stylelint/stylelint-config-standard) [![Build status](https://ci.appveyor.com/api/projects/status/96po99qof05hv285/branch/master?svg=true)](https://ci.appveyor.com/project/stylelint/stylelint-config-standard/branch/master)
+[![NPM version](http://img.shields.io/npm/v/stylelint-config-standard.svg)](https://www.npmjs.org/package/stylelint-config-standard) [![Build Status](https://travis-ci.com/stylelint/stylelint-config-standard.svg?branch=master)](https://travis-ci.com/stylelint/stylelint-config-standard) [![Build status](https://ci.appveyor.com/api/projects/status/96po99qof05hv285/branch/master?svg=true)](https://ci.appveyor.com/project/stylelint/stylelint-config-standard/branch/master)
 
 > The standard shareable config for stylelint.
 
