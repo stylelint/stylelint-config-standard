@@ -33,7 +33,7 @@
     "stylelint": "^10.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^8.3.0 || ^9.0.0 || ^10.0.0"
+    "stylelint": ">=10.1.0"
   },
   "scripts": {
     "lint:js": "eslint . --ignore-path .gitignore",
