@@ -18,7 +18,7 @@
     "index.js"
   ],
   "dependencies": {
-    "stylelint-config-recommended": "^2.2.0"
+    "stylelint-config-recommended": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^6.0.0",
@@ -30,10 +30,10 @@
     "remark-cli": "^7.0.0",
     "remark-preset-lint-consistent": "^2.0.0",
     "remark-preset-lint-recommended": "^3.0.0",
-    "stylelint": "^10.0.0"
+    "stylelint": "^11.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^8.3.0 || ^9.0.0 || ^10.0.0"
+    "stylelint": ">=10.1.0"
   },
   "scripts": {
     "lint:js": "eslint . --ignore-path .gitignore",
