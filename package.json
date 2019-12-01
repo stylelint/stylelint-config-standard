@@ -30,7 +30,7 @@
     "remark-cli": "^7.0.0",
     "remark-preset-lint-consistent": "^2.0.0",
     "remark-preset-lint-recommended": "^3.0.0",
-    "stylelint": "^11.0.0"
+    "stylelint": "^12.0.0"
   },
   "peerDependencies": {
     "stylelint": ">=10.1.0"
