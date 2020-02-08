@@ -1,15 +1,15 @@
-"use strict";
+"use strict"
 
 module.exports = {
-  extends: "stylelint-config-recommended",
-  rules: {
-    "at-rule-empty-line-before": [
-      "always",
-      {
-        except: ["blockless-after-same-name-blockless", "first-nested"],
-        ignore: ["after-comment"]
-      }
-    ],
+  "extends": "stylelint-config-recommended",
+  "rules": {
+    "at-rule-empty-line-before": [ "always", {
+      except: [
+        "blockless-after-same-name-blockless",
+        "first-nested",
+      ],
+      ignore: ["after-comment"],
+    } ],
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always-single-line",
     "at-rule-semicolon-newline-after": "always",
@@ -22,21 +22,21 @@ module.exports = {
     "block-opening-brace-space-before": "always",
     "color-hex-case": "lower",
     "color-hex-length": "short",
-    "comment-empty-line-before": [
-      "always",
-      {
-        except: ["first-nested"],
-        ignore: ["stylelint-commands"]
-      }
-    ],
+    "comment-empty-line-before": [ "always", {
+      except: ["first-nested"],
+      ignore: ["stylelint-commands"],
+    } ],
     "comment-whitespace-inside": "always",
-    "custom-property-empty-line-before": [
-      "always",
-      {
-        except: ["after-custom-property", "first-nested"],
-        ignore: ["after-comment", "inside-single-line-block"]
-      }
-    ],
+    "custom-property-empty-line-before": [ "always", {
+      except: [
+        "after-custom-property",
+        "first-nested",
+      ],
+      ignore: [
+        "after-comment",
+        "inside-single-line-block",
+      ],
+    } ],
     "declaration-bang-space-after": "never",
     "declaration-bang-space-before": "always",
     "declaration-block-semicolon-newline-after": "always-multi-line",
@@ -47,13 +47,16 @@ module.exports = {
     "declaration-colon-newline-after": "always-multi-line",
     "declaration-colon-space-after": "always-single-line",
     "declaration-colon-space-before": "never",
-    "declaration-empty-line-before": [
-      "always",
-      {
-        except: ["after-declaration", "first-nested"],
-        ignore: ["after-comment", "inside-single-line-block"]
-      }
-    ],
+    "declaration-empty-line-before": [ "always", {
+      except: [
+        "after-declaration",
+        "first-nested",
+      ],
+      ignore: [
+        "after-comment",
+        "inside-single-line-block",
+      ],
+    } ],
     "function-comma-newline-after": "always-multi-line",
     "function-comma-space-after": "always-single-line",
     "function-comma-space-before": "never",
@@ -62,7 +65,7 @@ module.exports = {
     "function-parentheses-newline-inside": "always-multi-line",
     "function-parentheses-space-inside": "never-single-line",
     "function-whitespace-after": "always",
-    indentation: 2,
+    "indentation": 2,
     "length-zero-no-unit": true,
     "max-empty-lines": 1,
     "media-feature-colon-space-after": "always",
@@ -79,13 +82,10 @@ module.exports = {
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
     "property-case": "lower",
-    "rule-empty-line-before": [
-      "always-multi-line",
-      {
-        except: ["first-nested"],
-        ignore: ["after-comment"]
-      }
-    ],
+    "rule-empty-line-before": [ "always-multi-line", {
+      except: ["first-nested"],
+      ignore: ["after-comment"],
+    } ],
     "selector-attribute-brackets-space-inside": "never",
     "selector-attribute-operator-space-after": "never",
     "selector-attribute-operator-space-before": "never",
@@ -105,6 +105,6 @@ module.exports = {
     "value-list-comma-newline-after": "always-multi-line",
     "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
-    "value-list-max-empty-lines": 0
-  }
-};
+    "value-list-max-empty-lines": 0,
+  },
+}
