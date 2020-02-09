@@ -1,3 +1,7 @@
+# 20.0.0
+
+-   Added: `value-keyword-case` rule.
+
 # 19.0.0
 
 -   Removed: `stylelint` < 10.1.0 from peer dependencies. stylelint@10.1.0+ is required now.
