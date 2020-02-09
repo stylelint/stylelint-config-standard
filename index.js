@@ -101,6 +101,7 @@ module.exports = {
     "selector-pseudo-element-colon-notation": "double",
     "selector-type-case": "lower",
     "unit-case": "lower",
+    "value-keyword-case": "lower",
     "value-list-comma-newline-after": "always-multi-line",
     "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
