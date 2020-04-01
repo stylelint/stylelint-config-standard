@@ -4,7 +4,7 @@
 
 # 19.0.0
 
--   Removed: `stylelint` < 10.1.0 from peer dependencies. stylelint@10.1.0+ is required now.
+-   Removed: `stylelint` < 10.1.0 from peer dependencies. `stylelint@10.1.0+` is required now.
 -   Changed: updated to [`stylelint-config-recommended@3.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/3.0.0).
 
 # 18.3.0
