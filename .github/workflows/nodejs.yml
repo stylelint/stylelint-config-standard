@@ -13,7 +13,7 @@ env:
   CI: true
 
 jobs:
-  pretest:
+  lint:
     name: Lint on Node.js ${{ matrix.node }} and ${{ matrix.os }}
 
     runs-on: ${{ matrix.os }}
