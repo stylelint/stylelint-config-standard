@@ -128,7 +128,7 @@ Since [stylelint 9.7.0](https://github.com/stylelint/stylelint/blob/9.7.0/CHANGE
 
 Simply add a `"rules"` key to your config, then add your overrides and additions there.
 
-For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` option, change the `indentation` to tabs, turn off the `number-leading-zero` rule,and add the `unit-whitelist` rule:
+For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` option, change the `indentation` to tabs, turn off the `number-leading-zero` rule,and add the `unit-allowed-list` rule:
 
 ```json
 {
@@ -142,7 +142,7 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
     ],
     "indentation": "tab",
     "number-leading-zero": null,
-    "unit-whitelist": ["em", "rem", "s"]
+    "unit-allowed-list": ["em", "rem", "s"]
   }
 }
 ```
@@ -167,28 +167,28 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
   - [`selector-max-compound-selectors`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-compound-selectors/README.md)
   - [`selector-max-specificity`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-specificity/README.md)
 - Specify acceptable selector types, units, properties, functions and words in comments using:
-  - [`at-rule-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/at-rule-blacklist/README.md)
-  - [`at-rule-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/at-rule-whitelist/README.md)
+  - [`at-rule-disallowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/at-rule-disallowed-list/README.md)
+  - [`at-rule-allowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/at-rule-allowed-list/README.md)
   - [`color-named`](https://github.com/stylelint/stylelint/blob/master/lib/rules/color-named/README.md)
   - [`color-no-hex`](https://github.com/stylelint/stylelint/blob/master/lib/rules/color-no-hex/README.md)
-  - [`comment-word-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/comment-word-blacklist/README.md)
+  - [`comment-word-disallowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/comment-word-disallowed-list/README.md)
   - [`declaration-no-important`](https://github.com/stylelint/stylelint/blob/master/lib/rules/declaration-no-important/README.md)
-  - [`declaration-property-unit-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/declaration-property-unit-blacklist/README.md)
-  - [`declaration-property-unit-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/declaration-property-unit-whitelist/README.md)
-  - [`declaration-property-value-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/declaration-property-value-blacklist/README.md)
-  - [`declaration-property-value-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/declaration-property-value-whitelist/README.md)
-  - [`function-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/function-blacklist/README.md)
-  - [`function-url-scheme-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/function-url-scheme-blacklist/README.md)
-  - [`function-url-scheme-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/function-url-scheme-whitelist/README.md)
-  - [`function-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/function-whitelist/README.md)
-  - [`media-feature-name-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/media-feature-name-blacklist/README.md)
-  - [`media-feature-name-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/media-feature-name-whitelist/README.md)
-  - [`property-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/property-blacklist/README.md)
-  - [`property-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/property-whitelist/README.md)
-  - [`selector-attribute-operator-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-attribute-operator-blacklist/README.md)
-  - [`selector-attribute-operator-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-attribute-operator-whitelist/README.md)
-  - [`selector-combinator-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-combinator-blacklist/README.md)
-  - [`selector-combinator-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-combinator-whitelist/README.md)
+  - [`declaration-property-unit-disallowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/declaration-property-unit-disallowed-list/README.md)
+  - [`declaration-property-unit-allowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/declaration-property-unit-allowed-list/README.md)
+  - [`declaration-property-value-disallowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/declaration-property-value-disallowed-list/README.md)
+  - [`declaration-property-value-allowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/declaration-property-value-allowed-list/README.md)
+  - [`function-disallowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/function-disallowed-list/README.md)
+  - [`function-url-scheme-disallowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/function-url-scheme-disallowed-list/README.md)
+  - [`function-url-scheme-allowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/function-url-scheme-allowed-list/README.md)
+  - [`function-allowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/function-allowed-list/README.md)
+  - [`media-feature-name-disallowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/media-feature-name-disallowed-list/README.md)
+  - [`media-feature-name-allowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/media-feature-name-allowed-list/README.md)
+  - [`property-disallowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/property-disallowed-list/README.md)
+  - [`property-allowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/property-allowed-list/README.md)
+  - [`selector-attribute-operator-disallowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-attribute-operator-disallowed-list/README.md)
+  - [`selector-attribute-operator-allowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-attribute-operator-allowed-list/README.md)
+  - [`selector-combinator-disallowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-combinator-disallowed-list/README.md)
+  - [`selector-combinator-allowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-combinator-allowed-list/README.md)
   - [`selector-max-class`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-class/README.md)
   - [`selector-max-attribute`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-attribute/README.md)
   - [`selector-max-combinators`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-combinators/README.md)
@@ -197,12 +197,12 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
   - [`selector-no-qualifying-type`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-no-qualifying-type/README.md)
   - [`selector-max-type`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-type/README.md)
   - [`selector-max-universal`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-universal/README.md)
-  - [`selector-pseudo-class-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-class-blacklist/README.md)
-  - [`selector-pseudo-class-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-class-whitelist/README.md)
-  - [`selector-pseudo-element-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-element-blacklist/README.md)
-  - [`selector-pseudo-element-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-element-whitelist/README.md)
-  - [`unit-blacklist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/unit-blacklist/README.md)
-  - [`unit-whitelist`](https://github.com/stylelint/stylelint/blob/master/lib/rules/unit-whitelist/README.md)
+  - [`selector-pseudo-class-disallowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-class-disallowed-list/README.md)
+  - [`selector-pseudo-class-allowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-class-allowed-list/README.md)
+  - [`selector-pseudo-element-disallowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-element-disallowed-list/README.md)
+  - [`selector-pseudo-element-allowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-pseudo-element-allowed-list/README.md)
+  - [`unit-disallowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/unit-disallowed-list/README.md)
+  - [`unit-allowed-list`](https://github.com/stylelint/stylelint/blob/master/lib/rules/unit-allowed-list/README.md)
 - Specify acceptable naming patterns using:
   - [`custom-media-pattern`](https://github.com/stylelint/stylelint/blob/master/lib/rules/custom-media-pattern/README.md)
   - [`custom-property-pattern`](https://github.com/stylelint/stylelint/blob/master/lib/rules/custom-property-pattern/README.md)
