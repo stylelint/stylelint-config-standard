@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - master
-      - "dependabot/**"
+      - 'dependabot/**'
   pull_request:
     branches:
-      - "**"
+      - '**'
 
 env:
   CI: true
