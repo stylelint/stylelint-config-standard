@@ -46,7 +46,7 @@
     ]
   },
   "dependencies": {
-    "stylelint-config-recommended": "^3.0.0"
+    "stylelint-config-recommended": "^4.0.0"
   },
   "devDependencies": {
     "@stylelint/prettier-config": "^2.0.0",
@@ -62,9 +62,9 @@
     "pinst": "^2.1.6",
     "prettier": "^2.2.1",
     "remark-cli": "^9.0.0",
-    "stylelint": "^13.7.2"
+    "stylelint": "^13.12.0"
   },
   "peerDependencies": {
-    "stylelint": "^10.1.0 || ^11.0.0 || ^12.0.0 || ^13.0.0"
+    "stylelint": "^13.12.0"
   }
 }
