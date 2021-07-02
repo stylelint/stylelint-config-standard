@@ -51,7 +51,7 @@
     "@stylelint/remark-preset": "^2.0.0",
     "eslint": "^7.27.0",
     "eslint-config-stylelint": "^13.1.1",
-    "husky": "^6.0.0",
+    "husky": "^7.0.0",
     "jest": "^27.0.3",
     "lint-staged": "^11.0.0",
     "np": "^7.5.0",
