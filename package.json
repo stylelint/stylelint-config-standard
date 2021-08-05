@@ -49,18 +49,18 @@
   "devDependencies": {
     "@stylelint/prettier-config": "^2.0.0",
     "@stylelint/remark-preset": "^2.0.0",
-    "eslint": "^7.27.0",
+    "eslint": "^7.32.0",
     "eslint-config-stylelint": "^13.1.1",
-    "husky": "^7.0.0",
-    "jest": "^27.0.3",
-    "lint-staged": "^11.0.0",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.1.1",
     "np": "^7.5.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.3.0",
-    "remark-cli": "^9.0.0",
+    "prettier": "^2.3.2",
+    "remark-cli": "^10.0.0",
     "stylelint": "^13.13.1"
   },
   "peerDependencies": {
-    "stylelint": "^13.13.0"
+    "stylelint": "^13.13.1"
   }
 }
