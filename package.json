@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@stylelint/prettier-config": "^2.0.0",
-    "@stylelint/remark-preset": "^2.0.0",
+    "@stylelint/remark-preset": "^3.0.0",
     "eslint": "^7.32.0",
     "eslint-config-stylelint": "^13.1.1",
     "husky": "^7.0.1",
