@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/stylelint-config-standard.svg)](https://www.npmjs.org/package/stylelint-config-standard) [![Build Status](https://github.com/stylelint/stylelint-config-standard/workflows/CI/badge.svg)](https://github.com/stylelint/stylelint-config-standard/actions)
 
-> The standard shareable config for stylelint.
+> The standard shareable config for Stylelint.
 
 Extends [`stylelint-config-recommended`](https://github.com/stylelint/stylelint-config-recommended).
 
@@ -120,7 +120,34 @@ Set your stylelint config to:
 
 Add a `"rules"` key to your config, then add your overrides and additions there.
 
-For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` option, change the `indentation` to tabs, turn off the `number-leading-zero` rule,and add the `unit-allowed-list` rule:
+You can turn off rules by setting its value to `null`. For example:
+
+```json
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "selector-class-pattern": null
+  }
+}
+```
+
+Or lower the severity of a rule to a warning using the `severity` secondary option. For example:
+
+```json
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "property-no-vendor-prefix": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ]
+  }
+}
+```
+
+A more complete example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` option, change the `indentation` to tabs, turn off the `number-leading-zero` rule, set the severity of the `number-max-precision` rule to `warning`, and add the `unit-allowed-list` rule:
 
 ```json
 {
@@ -134,6 +161,12 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
     ],
     "indentation": "tab",
     "number-leading-zero": null,
+    "number-max-precision": [
+      4,
+      {
+        "severity": "warning"
+      }
+    ],
     "unit-allowed-list": ["em", "rem", "s"]
   }
 }
