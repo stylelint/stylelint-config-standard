@@ -41,13 +41,13 @@ module.exports = {
 			},
 		],
 		'custom-media-pattern': [
-			'/^([a-z][a-z0-9]*)(-[a-z0-9]+)*$/',
+			'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
 			{
 				message: 'Expected custom media query name to be kebab-case',
 			},
 		],
 		'custom-property-pattern': [
-			'/^([a-z][a-z0-9]*)(-[a-z0-9]+)*$/',
+			'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
 			{
 				message: 'Expected custom property name to be kebab-case',
 			},
@@ -83,7 +83,7 @@ module.exports = {
 		'hue-degree-notation': 'angle',
 		indentation: 2,
 		'keyframes-name-pattern': [
-			'/^([a-z][a-z0-9]*)(-[a-z0-9]+)*$/',
+			'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
 			{
 				message: 'Expected keyframe name to be kebab-case',
 			},
@@ -122,7 +122,7 @@ module.exports = {
 		'selector-attribute-operator-space-before': 'never',
 		'selector-attribute-quotes': 'always',
 		'selector-class-pattern': [
-			'/^([a-z][a-z0-9]*)(-[a-z0-9]+)*$/',
+			'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
 			{
 				message: 'Expected class selector to be kebab-case',
 			},
@@ -131,7 +131,7 @@ module.exports = {
 		'selector-combinator-space-before': 'always',
 		'selector-descendant-combinator-no-non-space': true,
 		'selector-id-pattern': [
-			'/^([a-z][a-z0-9]*)(-[a-z0-9]+)*$/',
+			'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
 			{
 				message: 'Expected id selector to be kebab-case',
 			},
