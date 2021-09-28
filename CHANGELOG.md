@@ -2,7 +2,7 @@
 
 ## 23.0.0
 
-This releases adds over a dozen new rules.
+This release adds over a dozen new rules.
 
 If needed, you can [extend the config](README.md#extending-the-config) to turn off or lower the severity of any of the new rules.
 
