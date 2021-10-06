@@ -36,7 +36,11 @@
   "eslintConfig": {
     "extends": [
       "stylelint"
-    ]
+    ],
+    "globals": {
+      "module": true,
+      "require": true
+    }
   },
   "remarkConfig": {
     "plugins": [
@@ -50,7 +54,7 @@
     "@stylelint/prettier-config": "^2.0.0",
     "@stylelint/remark-preset": "^3.0.0",
     "eslint": "^7.32.0",
-    "eslint-config-stylelint": "^13.1.1",
+    "eslint-config-stylelint": "^14.0.0",
     "husky": "^7.0.2",
     "jest": "^27.1.0",
     "lint-staged": "^11.1.2",
