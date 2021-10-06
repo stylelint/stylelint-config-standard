@@ -36,7 +36,11 @@
   "eslintConfig": {
     "extends": [
       "stylelint"
-    ]
+    ],
+    "globals": {
+      "module": true,
+      "require": true
+    }
   },
   "remarkConfig": {
     "plugins": [
