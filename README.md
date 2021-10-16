@@ -49,7 +49,7 @@ To see the rules that this config uses, please read the [config itself](./index.
 
 /* Single-line comment */
 
-@media (min-width >= 60em) {
+@media (width >= 60em) {
   .selector {
     /* Flush to parent comment */
     transform: translate(1, 1) scale(3);
