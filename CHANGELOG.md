@@ -1,5 +1,39 @@
 # Changelog
 
+## 23.0.0
+
+This release adds over a dozen new rules.
+
+If needed, you can [extend the config](README.md#extending-the-config) to turn off or lower the severity of any of the new rules.
+
+We recommend using [Autoprefixer](https://github.com/postcss/autoprefixer) to automatically prefix your at-rules, properties, selectors and values.
+
+- Removed: `stylelint` less than `14.0.0` from peer dependencies.
+- Changed: updated to [`stylelint-config-recommended@6.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/6.0.0).
+- Added: `alpha-value-notation` rule.
+- Added: `at-rule-no-vendor-prefix` rule.
+- Added: `color-function-notation` rule.
+- Added: `custom-media-pattern` rule.
+- Added: `custom-property-pattern` rule.
+- Added: `declaration-block-no-redundant-longhand-properties` rule.
+- Added: `font-family-name-quotes` rule.
+- Added: `function-url-quotes` rule.
+- Added: `hue-degree-notation` rule.
+- Added: `keyframes-name-pattern` rule.
+- Added: `max-line-length` rule.
+- Added: `media-feature-name-no-vendor-prefix` rule.
+- Added: `no-empty-first-line` rule.
+- Added: `no-irregular-whitespace` rule.
+- Added: `number-max-precision` rule.
+- Added: `property-no-vendor-prefix` rule.
+- Added: `selector-attribute-quotes` rule.
+- Added: `selector-class-pattern` rule.
+- Added: `selector-id-pattern` rule.
+- Added: `selector-no-vendor-prefix` rule.
+- Added: `shorthand-property-no-redundant-values` rule.
+- Added: `string-quotes` rule.
+- Added: `value-no-vendor-prefix` rule.
+
 ## 22.0.0
 
 - Removed: `stylelint` less than `13.13.0` from peer dependencies.

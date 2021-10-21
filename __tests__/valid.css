@@ -1,23 +1,27 @@
-@import url(x.css);
-@import url(y.css);
+@import url("x.css");
+@import url("y.css");
 
 /**
  * Multi-line comment
  */
 
+:root {
+  --brand-red: hsl(5deg 10% 40%);
+}
+
 .selector-1,
 .selector-2,
 .selector-3[type="text"] {
-  background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
+  background: linear-gradient(#fff, rgb(0 0 0 / 80%));
   box-sizing: border-box;
   display: block;
-  color: #333;
+  color: var(--brand-red);
 }
 
 .selector-a,
 .selector-b:not(:first-child) {
   padding: 10px !important;
-  top: calc(calc(1em * 2) / 3);
+  top: calc(100% - 2rem);
 }
 
 .selector-x { width: 10%; }
@@ -26,7 +30,7 @@
 
 /* Single-line comment */
 
-@media (min-width >= 60em) {
+@media (width >= 60em) {
   .selector {
     /* Flush to parent comment */
     transform: translate(1, 1) scale(3);
@@ -35,8 +39,8 @@
 
 @media (orientation: portrait), projection and (color) {
   .selector-i + .selector-ii {
-    background: color(rgb(0, 0, 0) lightness(50%));
-    font-family: helvetica, "arial black", sans-serif;
+    background: hsl(20deg 25% 33%);
+    font-family: Helvetica, "Arial Black", sans-serif;
   }
 }
 
@@ -45,12 +49,13 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .selector {
+    animation: 3s none fade-in;
     background-image:
       repeating-linear-gradient(
         -45deg,
         transparent,
         #fff 25px,
-        rgba(255, 255, 255, 1) 50px
+        rgb(255 255 255 / 100%) 50px
       );
     margin: 10px;
     margin-bottom: 5px;
@@ -63,7 +68,12 @@
 
   /* Flush nested single line comment */
   .selector::after {
-    content: '→';
-    background-image: url(x.svg);
+    content: "→";
+    background-image: url("x.svg");
   }
+}
+
+@keyframes fade-in {
+  from { opacity: 0%; }
+  to { opacity: 100%; }
 }
