@@ -71,7 +71,7 @@ We recommend using [Autoprefixer](https://github.com/postcss/autoprefixer) to au
 
 ## 17.0.0
 
-- Changed: now extends [`stylelint-config-recommended`](https://github.com/stylelint/stylelint-config-recommended), which turns on the `at-rule-no-unknown` rule. Therefore, if you use non-standard at-rules, like those introduced in SCSS and Less (e.g. `@extends`, `@includes` etc), be sure to [extend the config](README.md#extending-the-config) and make use of `at-rule-no-unknown`'s [`ignoreAtRules: []` secondary option](https://github.com/stylelint/stylelint/tree/master/lib/rules/at-rule-no-unknown#ignoreatrules-regex-string).
+- Changed: now extends [`stylelint-config-recommended`](https://github.com/stylelint/stylelint-config-recommended), which turns on the `at-rule-no-unknown` rule. Therefore, if you use non-standard at-rules, like those introduced in SCSS and Less (e.g. `@extends`, `@includes` etc), be sure to [extend the config](README.md#extending-the-config) and make use of `at-rule-no-unknown`'s [`ignoreAtRules: []` secondary option](https://github.com/stylelint/stylelint/tree/main/lib/rules/at-rule-no-unknown#ignoreatrules-regex-string).
 
 ## 16.0.0
 
