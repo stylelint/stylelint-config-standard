@@ -7,10 +7,7 @@
     "stylelint-config",
     "standard"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stylelint/stylelint-config-standard.git"
-  },
+  "repository": "stylelint/stylelint-config-standard",
   "license": "MIT",
   "author": "Stylelint",
   "main": "index.js",
@@ -48,7 +45,7 @@
     ]
   },
   "dependencies": {
-    "stylelint-config-recommended": "^6.0.0-0"
+    "stylelint-config-recommended": "^6.0.0"
   },
   "devDependencies": {
     "@stylelint/prettier-config": "^2.0.0",
@@ -62,9 +59,9 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.3.2",
     "remark-cli": "^10.0.0",
-    "stylelint": "^14.0.0-0"
+    "stylelint": "^14.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.0.0-0"
+    "stylelint": "^14.0.0"
   }
 }
