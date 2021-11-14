@@ -1,5 +1,9 @@
 # Changelog
 
+## 24.0.0
+
+- Changed: `alpha-value-notation` to be `"number"` for `opacity` property.
+
 ## 23.0.0
 
 This release adds over a dozen new rules.

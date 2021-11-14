@@ -93,8 +93,8 @@ To see the rules that this config uses, please read the [config itself](./index.
 }
 
 @keyframes fade-in {
-  from { opacity: 0%; }
-  to { opacity: 100%; }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 ```
 
