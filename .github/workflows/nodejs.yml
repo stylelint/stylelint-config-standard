@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Use Node.js ${{ matrix.node }}
+      - name: Use Node.js LTS
         uses: actions/setup-node@v2
         with:
           node-version: 'lts/*'
@@ -56,7 +56,9 @@ jobs:
           cache: npm
 
       - name: Install latest npm
-        run: npm install --global npm@latest
+        run: npm install --global npm@8.3
+        # TODO: npm@8.4 is broken on Windows. See https://github.com/npm/cli/issues/4341
+        # run: npm install --global npm@latest
 
       - name: Install dependencies
         run: npm ci
