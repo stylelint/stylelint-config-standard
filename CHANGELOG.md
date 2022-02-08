@@ -1,5 +1,10 @@
 # Changelog
 
+## 25.0.0
+
+- Removed: `stylelint` less than `14.4.0` from peer dependencies.
+- Changed: updated to [`stylelint-config-recommended@7.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/7.0.0)
+
 ## 24.0.0
 
 - Changed: `alpha-value-notation` to be `"number"` for `opacity` property.
