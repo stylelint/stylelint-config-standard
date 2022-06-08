@@ -17,8 +17,8 @@ To see the rules that this config uses, please read the [config itself](./index.
 
 <!-- prettier-ignore -->
 ```css
-@import url("x.css");
-@import url("y.css");
+@import "x.css";
+@import "y.css";
 
 /**
  * Multi-line comment
