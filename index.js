@@ -86,6 +86,7 @@ module.exports = {
 		'function-url-quotes': 'always',
 		'function-whitespace-after': 'always',
 		'hue-degree-notation': 'angle',
+		'import-notation': 'string',
 		indentation: 2,
 		'keyframes-name-pattern': [
 			'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
