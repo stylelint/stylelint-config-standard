@@ -108,7 +108,6 @@ module.exports = {
 		'media-query-list-comma-space-before': 'never',
 		'no-empty-first-line': true,
 		'no-eol-whitespace': true,
-		'no-irregular-whitespace': true,
 		'no-missing-end-of-source-newline': true,
 		'number-leading-zero': 'always',
 		'number-max-precision': 4,
