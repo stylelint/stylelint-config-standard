@@ -86,6 +86,7 @@ module.exports = {
 		'function-url-quotes': 'always',
 		'function-whitespace-after': 'always',
 		'hue-degree-notation': 'angle',
+		'import-notation': 'string',
 		indentation: 2,
 		'keyframes-name-pattern': [
 			'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
@@ -108,7 +109,6 @@ module.exports = {
 		'media-query-list-comma-space-before': 'never',
 		'no-empty-first-line': true,
 		'no-eol-whitespace': true,
-		'no-irregular-whitespace': true,
 		'no-missing-end-of-source-newline': true,
 		'number-leading-zero': 'always',
 		'number-max-precision': 4,
@@ -145,6 +145,7 @@ module.exports = {
 		'selector-list-comma-space-before': 'never',
 		'selector-max-empty-lines': 0,
 		'selector-no-vendor-prefix': true,
+		'selector-not-notation': 'complex',
 		'selector-pseudo-class-case': 'lower',
 		'selector-pseudo-class-parentheses-space-inside': 'never',
 		'selector-pseudo-element-case': 'lower',
