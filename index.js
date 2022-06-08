@@ -115,7 +115,6 @@ module.exports = {
 		'number-no-trailing-zeros': true,
 		'property-case': 'lower',
 		'property-no-vendor-prefix': true,
-		'selector-not-notation': 'complex',
 		'rule-empty-line-before': [
 			'always-multi-line',
 			{
@@ -146,6 +145,7 @@ module.exports = {
 		'selector-list-comma-space-before': 'never',
 		'selector-max-empty-lines': 0,
 		'selector-no-vendor-prefix': true,
+		'selector-not-notation': 'complex',
 		'selector-pseudo-class-case': 'lower',
 		'selector-pseudo-class-parentheses-space-inside': 'never',
 		'selector-pseudo-element-case': 'lower',
