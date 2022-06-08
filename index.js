@@ -114,6 +114,7 @@ module.exports = {
 		'number-no-trailing-zeros': true,
 		'property-case': 'lower',
 		'property-no-vendor-prefix': true,
+		'selector-not-notation': 'complex',
 		'rule-empty-line-before': [
 			'always-multi-line',
 			{
