@@ -59,7 +59,7 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.6.2",
     "remark-cli": "^10.0.1",
-    "stylelint": "^14.9.0"
+    "stylelint": "github:stylelint/stylelint#main"
   },
   "peerDependencies": {
     "stylelint": "^14.9.0"
