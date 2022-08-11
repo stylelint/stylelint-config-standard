@@ -88,6 +88,7 @@ module.exports = {
 		'hue-degree-notation': 'angle',
 		'import-notation': 'string',
 		indentation: 2,
+		'keyframe-selector-notation': 'percentage-unless-within-keyword-only-block',
 		'keyframes-name-pattern': [
 			'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
 			{
