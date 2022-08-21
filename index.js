@@ -6,7 +6,13 @@ module.exports = {
 		'alpha-value-notation': [
 			'percentage',
 			{
-				exceptProperties: ['opacity'],
+				exceptProperties: [
+					'opacity',
+					'fill-opacity',
+					'flood-opacity',
+					'stop-opacity',
+					'stroke-opacity',
+				],
 			},
 		],
 		'at-rule-empty-line-before': [
