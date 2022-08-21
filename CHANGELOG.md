@@ -1,5 +1,10 @@
 # Changelog
 
+## 28.0.0
+
+- Removed: `stylelint` less than `14.11.0` from peer dependencies.
+- Add: SVG opacity properties as exceptions to `alpha-value-notation` rule.
+
 ## 27.0.0
 
 - Removed: `stylelint` less than `14.10.0` from peer dependencies.
