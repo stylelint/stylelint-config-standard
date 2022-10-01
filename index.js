@@ -166,6 +166,12 @@ module.exports = {
 		'value-list-comma-space-after': 'always-single-line',
 		'value-list-comma-space-before': 'never',
 		'value-list-max-empty-lines': 0,
-		'value-no-vendor-prefix': true,
+		'value-no-vendor-prefix': [
+			true,
+			{
+				// `-webkit-box` is allowed as standard. See https://www.w3.org/TR/css-overflow-3/#webkit-line-clamp
+				ignoreValues: ['box'],
+			},
+		],
 	},
 };
