@@ -11,9 +11,9 @@ on:
 
 jobs:
   lint:
-    uses: stylelint/.github/.github/workflows/lint.yml@restrict-permissions-and-run-only-test
+    uses: stylelint/.github/.github/workflows/lint.yml@main
 
   test:
-    uses: stylelint/.github/.github/workflows/test.yml@restrict-permissions-and-run-only-test
+    uses: stylelint/.github/.github/workflows/test.yml@main
     with:
       os: '["ubuntu-latest", "windows-latest", "macos-latest"]'
