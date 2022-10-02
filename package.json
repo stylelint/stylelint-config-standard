@@ -22,6 +22,7 @@
     "lint:md": "remark . --quiet --frail --ignore-path .gitignore",
     "lint": "npm-run-all --parallel lint:*",
     "release": "np",
+    "pretest": "npm run lint",
     "test": "jest",
     "watch": "jest --watch"
   },
