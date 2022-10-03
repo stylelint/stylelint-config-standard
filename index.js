@@ -54,13 +54,13 @@ module.exports = {
 		'custom-media-pattern': [
 			'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
 			{
-				message: 'Expected custom media query name to be kebab-case',
+				message: (name) => `Expected custom media query name "${name}" to be kebab-case`,
 			},
 		],
 		'custom-property-pattern': [
 			'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
 			{
-				message: 'Expected custom property name to be kebab-case',
+				message: (name) => `Expected custom property name "${name}" to be kebab-case`,
 			},
 		],
 		'declaration-bang-space-after': 'never',
@@ -98,7 +98,7 @@ module.exports = {
 		'keyframes-name-pattern': [
 			'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
 			{
-				message: 'Expected keyframe name to be kebab-case',
+				message: (name) => `Expected keyframe name "${name}" to be kebab-case`,
 			},
 		],
 		'length-zero-no-unit': true,
@@ -136,7 +136,7 @@ module.exports = {
 		'selector-class-pattern': [
 			'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
 			{
-				message: 'Expected class selector to be kebab-case',
+				message: (selector) => `Expected class selector "${selector}" to be kebab-case`,
 			},
 		],
 		'selector-combinator-space-after': 'always',
@@ -145,7 +145,7 @@ module.exports = {
 		'selector-id-pattern': [
 			'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
 			{
-				message: 'Expected id selector to be kebab-case',
+				message: (selector) => `Expected id selector "${selector}" to be kebab-case`,
 			},
 		],
 		'selector-list-comma-newline-after': 'always',
