@@ -92,7 +92,7 @@ module.exports = {
 		'function-url-quotes': 'always',
 		'function-whitespace-after': 'always',
 		'hue-degree-notation': 'angle',
-		'import-notation': 'string',
+		'import-notation': 'url',
 		indentation: 2,
 		'keyframe-selector-notation': 'percentage-unless-within-keyword-only-block',
 		'keyframes-name-pattern': [
