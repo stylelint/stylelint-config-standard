@@ -1,5 +1,12 @@
 # Changelog
 
+## 29.0.0
+
+- Removed: `stylelint` less than `14.14.0` from peer dependencies.
+- Changed: `import-notation` to be `"url"`.
+- Added: custom parameter messages to `*-pattern` rules.
+- Fixed: `value-no-vendor-prefix` to ignore `-webkit-box`.
+
 ## 28.0.0
 
 - Removed: `stylelint` less than `14.11.0` from peer dependencies.
