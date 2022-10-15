@@ -3,7 +3,7 @@
 ## 29.0.0
 
 - Removed: `stylelint` less than `14.14.0` from peer dependencies.
-- Changed: `import-notation` to use `"url"`.
+- Changed: `import-notation` to be `"url"`.
 - Added: custom parameter messages to `*-pattern` rules.
 - Fixed: `value-no-vendor-prefix` to ignore `-webkit-box`.
 
