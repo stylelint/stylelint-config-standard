@@ -40,7 +40,7 @@ describe('flags warnings with invalid css', () => {
 	});
 
 	it('flags warnings', () => {
-		expect(result.results[0].warnings).toHaveLength(6);
+		expect(result.results[0].warnings).toHaveLength(5);
 	});
 
 	it('correct warning text', () => {
@@ -48,7 +48,6 @@ describe('flags warnings with invalid css', () => {
 			'Expected custom media query name "--FOO" to be kebab-case',
 			'Expected custom property name "--FOO" to be kebab-case',
 			'Expected keyframe name "FOO" to be kebab-case',
-			'Expected a leading zero (number-leading-zero)',
 			'Expected class selector ".FOO" to be kebab-case',
 			'Expected id selector "#FOO" to be kebab-case',
 		]);
@@ -59,7 +58,6 @@ describe('flags warnings with invalid css', () => {
 			'custom-media-pattern',
 			'custom-property-pattern',
 			'keyframes-name-pattern',
-			'number-leading-zero',
 			'selector-class-pattern',
 			'selector-id-pattern',
 		]);
@@ -70,7 +68,7 @@ describe('flags warnings with invalid css', () => {
 	});
 
 	it('correct line number', () => {
-		expect(result.results[0].warnings[0].line).toBe(5);
+		expect(result.results[0].warnings[0].line).toBe(1);
 	});
 
 	it('correct column number', () => {

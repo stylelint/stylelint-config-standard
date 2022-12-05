@@ -1,5 +1,7 @@
-@import url("x.css");
-@import url("y.css");
+@import url("foo.css");
+@import url("bar.css");
+
+@custom-media --foo (min-width: 30em);
 
 /**
  * Multi-line comment
@@ -9,65 +11,27 @@
   --brand-red: hsl(5deg 10% 40%);
 }
 
-.selector-1,
-.selector-2,
-.selector-3[type="text"] {
-  background: linear-gradient(#fff, rgb(0 0 0 / 80%));
-  box-sizing: border-box;
-  display: block;
-  color: var(--brand-red);
-}
+/* Single-line comment */
 
-.selector-a,
-.selector-b:not(:first-child) {
-  padding: 10px !important;
+.class-foo {
+  margin: 0;
   top: calc(100% - 2rem);
 }
 
-.selector-x { width: 10%; }
-.selector-y { width: 20%; }
-.selector-z { width: 30%; }
-
-/* Single-line comment */
-
-@media (width >= 60em) {
-  .selector {
-    /* Flush to parent comment */
-    transform: translate(1, 1) scale(3);
-  }
-}
-
-@media (orientation: portrait), projection and (color) {
-  .selector-i + .selector-ii {
-    background: hsl(20deg 25% 33%);
-    font-family: Helvetica, "Arial Black", sans-serif;
-  }
-}
-
 /* Flush single line comment */
-@media
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .selector {
-    animation: 3s none fade-in;
-    background-image:
-      repeating-linear-gradient(
-        -45deg,
-        transparent,
-        #fff 25px,
-        rgb(255 255 255 / 100%) 50px
-      );
-    margin: 10px;
-    margin-bottom: 5px;
-    box-shadow:
-      0 1px 1px #000,
-      0 1px 0 #fff,
-      2px 2px 1px 1px #ccc inset;
-    height: 10rem;
+@media (width >= 60em) {
+  #id-bar {
+    /* Flush to parent comment */
+    --offset: 0px;
+
+    color: #fff;
+    font-family: Helvetica, "Arial Black", sans-serif;
+    left: calc(var(--offset) + 50%);
   }
 
-  /* Flush nested single line comment */
-  .selector::after {
+   /* Flush nested single line comment */
+  a::after {
+    display: block;
     content: "→";
     background-image: url("x.svg");
   }

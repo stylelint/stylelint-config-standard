@@ -1,7 +1,3 @@
-a {
-  top: .2em;
-}
-
 @custom-media --FOO;
 
 :root { --FOO: 1px; }

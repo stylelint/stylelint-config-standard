@@ -1,5 +1,10 @@
 # Changelog
 
+## 30.0.0
+
+- Removed: rules deprecated in `stylelint` `15.0.0`.
+- Fixed: `length-zero-no-unit` to ignore custom properties.
+
 ## 29.0.0
 
 - Removed: `stylelint` less than `14.14.0` from peer dependencies.
