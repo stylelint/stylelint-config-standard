@@ -63,6 +63,6 @@
     "stylelint": "github:stylelint/stylelint#v15"
   },
   "peerDependencies": {
-    "stylelint": "^14.14.0"
+    "stylelint": "^15.0.0"
   }
 }
