@@ -13,7 +13,7 @@
 
 /* Single-line comment */
 
-.class-foo {
+.class-foo:not(a, div) {
   margin: 0;
   top: calc(100% - 2rem);
 }
@@ -29,7 +29,7 @@
     left: calc(var(--offset) + 50%);
   }
 
-   /* Flush nested single line comment */
+  /* Flush nested single line comment */
   a::after {
     display: block;
     content: "→";

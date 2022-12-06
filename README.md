@@ -27,7 +27,7 @@ To see the rules that this config uses, please read the [config itself](./index.
 
 /* Single-line comment */
 
-.class-foo {
+.class-foo:not(a, div) {
   margin: 0;
   top: calc(100% - 2rem);
 }
