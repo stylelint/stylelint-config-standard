@@ -10,7 +10,6 @@ To see the rules that this config uses, please read the [config itself](./index.
 
 ## Example
 
-<!-- prettier-ignore -->
 ```css
 @import url("foo.css");
 @import url("bar.css");
@@ -36,11 +35,14 @@ To see the rules that this config uses, please read the [config itself](./index.
 @media (width >= 60em) {
   #id-bar {
     /* Flush to parent comment */
+    --offset: 0px;
+
     color: #fff;
     font-family: Helvetica, "Arial Black", sans-serif;
+    left: calc(var(--offset) + 50%);
   }
 
-   /* Flush nested single line comment */
+  /* Flush nested single line comment */
   a::after {
     display: block;
     content: "→";
@@ -49,8 +51,13 @@ To see the rules that this config uses, please read the [config itself](./index.
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 ```
 
