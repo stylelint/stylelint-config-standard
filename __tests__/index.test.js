@@ -75,3 +75,16 @@ describe('flags warnings with invalid css', () => {
 		expect(result.results[0].warnings[0].column).toBe(15);
 	});
 });
+
+describe('deprecated rules', () => {
+	const deprecatedRuleNames = Object.values(stylelint.rules)
+		.filter((rule) => rule.meta.deprecated)
+		.map((rule) => rule.ruleName);
+
+	const testFn = deprecatedRuleNames.length === 0 ? it.skip : it;
+
+	testFn('exclude deprecate rules', () => {
+		// eslint-disable-next-line jest/no-standalone-expect -- If not using `it` directly, false positives occur.
+		expect(Object.keys(config.rules)).toEqual(expect.not.arrayContaining(deprecatedRuleNames));
+	});
+});
