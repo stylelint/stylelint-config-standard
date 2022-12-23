@@ -170,7 +170,7 @@ module.exports = {
 			true,
 			{
 				// `-webkit-box` is allowed as standard. See https://www.w3.org/TR/css-overflow-3/#webkit-line-clamp
-				ignoreValues: ['box'],
+				ignoreValues: ['box', 'inline-box'],
 			},
 		],
 	},
