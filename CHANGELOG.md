@@ -5,6 +5,7 @@
 - Removed: `stylelint` less than `15.0.0` from peer dependencies.
 - Removed: rules deprecated in `stylelint@15.0.0`.
 - Fixed: `length-zero-no-unit` to ignore custom properties.
+- Fixed: `value-no-vendor-prefix` to ignore `-webkit-inline-box`.
 
 ## 29.0.0
 
