@@ -13,6 +13,6 @@ jobs:
     uses: stylelint/.github/.github/workflows/lint.yml@main
 
   test:
-    uses: stylelint/.github/.github/workflows/test.yml@main
+    uses: stylelint/.github/.github/workflows/test.yml@remove-nodejs-12 # TODO: Change to `@main`.
     with:
       os: '["ubuntu-latest", "windows-latest", "macos-latest"]'
