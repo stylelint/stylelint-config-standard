@@ -46,7 +46,7 @@
     ]
   },
   "dependencies": {
-    "stylelint-config-recommended": "^9.0.0"
+    "stylelint-config-recommended": "github:stylelint/stylelint-config-recommended#prepare-10"
   },
   "devDependencies": {
     "@stylelint/prettier-config": "^2.0.0",
@@ -60,9 +60,9 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.1",
     "remark-cli": "^11.0.0",
-    "stylelint": "github:stylelint/stylelint#v15"
+    "stylelint": "github:stylelint/stylelint"
   },
   "peerDependencies": {
-    "stylelint": "^15.0.0"
+    "stylelint": "^14.0.0 || ^15.0.0"
   }
 }
