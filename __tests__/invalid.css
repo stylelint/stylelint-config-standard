@@ -1,13 +1,17 @@
-a {
-  top: .2em;
-}
-
 @custom-media --FOO;
 
-:root { --FOO: 1px; }
+:root {
+	--FOO: 1px;
+}
 
-@keyframes FOO { /* ... */ }
+@keyframes FOO {
+	/* ... */
+}
 
-.FOO { /* ... */ }
+.FOO {
+	/* ... */
+}
 
-#FOO { /* ... */ }
+#FOO {
+	/* ... */
+}
