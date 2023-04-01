@@ -1,5 +1,10 @@
 # Changelog
 
+# 32.0.0
+
+- Removed: `stylelint` less than `15.4.0` from peer dependencies.
+- Added: `media-feature-range-notation: "context"` rule
+
 ## 31.0.0
 
 - Removed: `stylelint` less than `15.3.0` from peer dependencies.
