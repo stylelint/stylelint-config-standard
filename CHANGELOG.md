@@ -1,18 +1,23 @@
 # Changelog
 
+# 33.0.0
+
+- Removed: `stylelint` less than `15.5.0` from peer dependencies.
+- Changed: updated to [`stylelint-config-recommended@12.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/12.0.0).
+
 # 32.0.0
 
 - Removed: `stylelint` less than `15.4.0` from peer dependencies.
-- Added: `media-feature-range-notation: "context"` rule
+- Added: `media-feature-range-notation: "context"` rule.
 
 ## 31.0.0
 
 - Removed: `stylelint` less than `15.3.0` from peer dependencies.
-- Changed: updated to [`stylelint-config-recommended@11.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/11.0.0)
+- Changed: updated to [`stylelint-config-recommended@11.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/11.0.0).
 
 ## 30.0.1
 
-- Fixed: updated to [`stylelint-config-recommended@10.0.1`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/10.0.1)
+- Fixed: updated to [`stylelint-config-recommended@10.0.1`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/10.0.1).
 
 ## 30.0.0
 
@@ -36,20 +41,20 @@
 ## 27.0.0
 
 - Removed: `stylelint` less than `14.10.0` from peer dependencies.
-- Changed: updated to [`stylelint-config-recommended@9.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/9.0.0)
+- Changed: updated to [`stylelint-config-recommended@9.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/9.0.0).
 - Added: `keyframe-selector-notation` rule.
 
 ## 26.0.0
 
 - Removed: `stylelint` less than `14.9.0` from peer dependencies.
-- Changed: updated to [`stylelint-config-recommended@8.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/8.0.0)
+- Changed: updated to [`stylelint-config-recommended@8.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/8.0.0).
 - Added: `import-notation` rule.
 - Added: `selector-not-notation` rule.
 
 ## 25.0.0
 
 - Removed: `stylelint` less than `14.4.0` from peer dependencies.
-- Changed: updated to [`stylelint-config-recommended@7.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/7.0.0)
+- Changed: updated to [`stylelint-config-recommended@7.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/7.0.0).
 
 ## 24.0.0
 
@@ -92,12 +97,12 @@ We recommend using [Autoprefixer](https://github.com/postcss/autoprefixer) to au
 ## 22.0.0
 
 - Removed: `stylelint` less than `13.13.0` from peer dependencies.
-- Changed: updated to [`stylelint-config-recommended@5.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/5.0.0)
+- Changed: updated to [`stylelint-config-recommended@5.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/5.0.0).
 
 ## 21.0.0
 
 - Removed: `stylelint` less than `13.12.0` from peer dependencies.
-- Changed: updated to [`stylelint-config-recommended@4.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/4.0.0)
+- Changed: updated to [`stylelint-config-recommended@4.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/4.0.0).
 
 ## 20.0.0
 
