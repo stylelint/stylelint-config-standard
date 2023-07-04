@@ -1,6 +1,6 @@
 # Changelog
 
-# 34.0.0
+## 34.0.0
 
 - Removed: `stylelint` less than `15.10.0` from peer dependencies
 - Changed: updated to [`stylelint-config-recommended@13.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/13.0.0).
