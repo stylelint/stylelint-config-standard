@@ -1,12 +1,17 @@
 # Changelog
 
-# 33.0.0
+# 34.0.0
+
+- Removed: `stylelint` less than `15.10.0` from peer dependencies
+- Changed: updated to [`stylelint-config-recommended@13.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/13.0.0).
+
+## 33.0.0
 
 - Removed: `stylelint` less than `15.5.0` from peer dependencies.
 - Changed: updated to [`stylelint-config-recommended@12.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/12.0.0).
 - Changed: restored `declaration-block-single-line-max-declarations` removed on `30.0.0`.
 
-# 32.0.0
+## 32.0.0
 
 - Removed: `stylelint` less than `15.4.0` from peer dependencies.
 - Added: `media-feature-range-notation: "context"` rule.

@@ -6,7 +6,7 @@ const pkg = require('../package.json');
 describe('engines.node', () => {
 	it("is the same as stylelint's one", () => {
 		const stylelintVersion = pkg.peerDependencies.stylelint;
-		const [nodeVersion] = JSON.parse(
+		const nodeVersion = JSON.parse(
 			execFileSync('npm', [
 				'view',
 				'--json',
