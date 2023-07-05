@@ -15,6 +15,10 @@ describe('engines.node', () => {
 			]).toString(),
 		);
 
-		expect(nodeVersion).toEqual(pkg.engines.node);
+		// `^x.y.z` range can return multiple versions.
+		const nodeVersions = Array.isArray(nodeVersion) ? [...new Set(nodeVersion)] : [nodeVersion];
+
+		expect(nodeVersions).toHaveLength(1);
+		expect(nodeVersions).toContain(pkg.engines.node);
 	});
 });
