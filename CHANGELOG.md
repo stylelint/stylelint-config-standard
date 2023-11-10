@@ -1,5 +1,11 @@
 # Changelog
 
+## 35.0.0
+
+- Removed: `stylelint` less than `16.0.0` from peer dependencies.
+- Removed: Node.js less than `18.12.0` support.
+- Changed: updated to [`stylelint-config-recommended@14.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/14.0.0).
+
 ## 34.0.0
 
 - Removed: `stylelint` less than `15.10.0` from peer dependencies
