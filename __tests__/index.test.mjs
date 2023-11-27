@@ -1,6 +1,9 @@
-import config from '../index.js';
+import { describe, it, beforeEach } from 'node:test';
+import assert from 'node:assert/strict';
 import fs from 'node:fs';
+
 import stylelint from 'stylelint';
+import config from '../index.js';
 
 describe('flags no warnings with valid css', () => {
 	const validCss = fs.readFileSync('./__tests__/valid.css', 'utf-8');
@@ -14,11 +17,11 @@ describe('flags no warnings with valid css', () => {
 	});
 
 	it('did not error', () => {
-		expect(result.errored).toBe(false);
+		assert.equal(result.errored, false);
 	});
 
 	it('flags no warnings', () => {
-		expect(result.results[0].warnings).toHaveLength(0);
+		assert.equal(result.results[0].warnings.length, 0);
 	});
 });
 
@@ -34,50 +37,64 @@ describe('flags warnings with invalid css', () => {
 	});
 
 	it('did error', () => {
-		expect(result.errored).toBe(true);
+		assert.equal(result.errored, true);
 	});
 
 	it('flags warnings', () => {
-		expect(result.results[0].warnings).toHaveLength(5);
+		assert.equal(result.results[0].warnings.length, 5);
 	});
 
 	it('correct warning text', () => {
-		expect(result.results[0].warnings.map((w) => w.text)).toEqual([
-			'Expected custom media query name "--FOO" to be kebab-case',
-			'Expected custom property name "--FOO" to be kebab-case',
-			'Expected keyframe name "FOO" to be kebab-case',
-			'Expected class selector ".FOO" to be kebab-case',
-			'Expected id selector "#FOO" to be kebab-case',
-		]);
+		assert.deepEqual(
+			result.results[0].warnings.map((w) => w.text),
+			[
+				'Expected custom media query name "--FOO" to be kebab-case',
+				'Expected custom property name "--FOO" to be kebab-case',
+				'Expected keyframe name "FOO" to be kebab-case',
+				'Expected class selector ".FOO" to be kebab-case',
+				'Expected id selector "#FOO" to be kebab-case',
+			],
+		);
 	});
 
 	it('correct rule flagged', () => {
-		expect(result.results[0].warnings.map((w) => w.rule)).toEqual([
-			'custom-media-pattern',
-			'custom-property-pattern',
-			'keyframes-name-pattern',
-			'selector-class-pattern',
-			'selector-id-pattern',
-		]);
+		assert.deepEqual(
+			result.results[0].warnings.map((w) => w.rule),
+			[
+				'custom-media-pattern',
+				'custom-property-pattern',
+				'keyframes-name-pattern',
+				'selector-class-pattern',
+				'selector-id-pattern',
+			],
+		);
 	});
 
 	it('correct severity flagged', () => {
-		expect(result.results[0].warnings[0].severity).toBe('error');
+		assert.equal(result.results[0].warnings[0].severity, 'error');
 	});
 
 	it('correct line number', () => {
-		expect(result.results[0].warnings[0].line).toBe(1);
+		assert.equal(result.results[0].warnings[0].line, 1);
 	});
 
 	it('correct column number', () => {
-		expect(result.results[0].warnings[0].column).toBe(15);
+		assert.equal(result.results[0].warnings[0].column, 15);
 	});
 });
 
 describe('deprecated rules are excluded', () => {
-	it.each(Object.keys(config.rules))('%s', async (ruleName) => {
-		const rule = await stylelint.rules[ruleName];
+	const ruleNames = Object.keys(config.rules);
 
-		expect(rule.meta.deprecated).toBeFalsy();
+	it('is not empty', () => {
+		assert.ok(ruleNames.length > 0);
 	});
+
+	for (const ruleName of ruleNames) {
+		it(`${ruleName}`, async () => {
+			const rule = await stylelint.rules[ruleName];
+
+			assert.ok(!rule.meta.deprecated);
+		});
+	}
 });

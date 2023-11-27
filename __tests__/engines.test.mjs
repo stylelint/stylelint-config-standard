@@ -1,3 +1,5 @@
+import { describe, it, beforeEach } from 'node:test';
+import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 
@@ -18,7 +20,7 @@ describe('engines.node', () => {
 		// `^x.y.z` range can return multiple versions.
 		const nodeVersions = Array.isArray(nodeVersion) ? [...new Set(nodeVersion)] : [nodeVersion];
 
-		expect(nodeVersions).toHaveLength(1);
-		expect(nodeVersions).toContain(pkg.engines.node);
+		assert.equal(nodeVersions.length, 1);
+		assert.ok(nodeVersions.includes(pkg.engines.node));
 	});
 });
