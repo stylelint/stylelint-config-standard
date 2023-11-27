@@ -1,7 +1,7 @@
-'use strict';
+import { execFileSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
 
-const { execFileSync } = require('child_process');
-const pkg = require('../package.json');
+const pkg = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'));
 
 describe('engines.node', () => {
 	it("is the same as stylelint's one", () => {
