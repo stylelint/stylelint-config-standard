@@ -1,8 +1,9 @@
-import { describe, it, beforeEach } from 'node:test';
+import { beforeEach, describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
 import stylelint from 'stylelint';
+
 import config from '../index.js';
 
 describe('flags no warnings with valid css', () => {
