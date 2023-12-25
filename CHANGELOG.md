@@ -1,5 +1,10 @@
 # Changelog
 
+## 36.0.0
+
+- Removed: `stylelint` less than `16.1.0` from peer dependencies.
+- Added: `lightness-notation: "percentage"` rule.
+
 ## 35.0.0
 
 - Removed: `stylelint` less than `16.0.0` from peer dependencies.
