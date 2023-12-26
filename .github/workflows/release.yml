@@ -1,0 +1,21 @@
+name: Release
+
+on:
+  push:
+    tags: ['**']
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Create release
+        uses: stylelint/changelog-to-github-release-action@main
