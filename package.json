@@ -62,7 +62,7 @@
     "stylelint": "^16.2.1"
   },
   "peerDependencies": {
-    "stylelint": "^16.2.1"
+    "stylelint": "^16.1.0"
   },
   "engines": {
     "node": ">=18.12.0"
