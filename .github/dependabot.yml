@@ -12,6 +12,8 @@ updates:
       development-dependencies:
         dependency-type: 'development'
         exclude-patterns: ['stylelint']
+    ignore:
+      - dependency-name: 'stylelint' # Avoid updating the peer dependency.
 
   - package-ecosystem: github-actions
     directory: '/'
