@@ -8,6 +8,16 @@
     "standard"
   ],
   "repository": "stylelint/stylelint-config-standard",
+  "funding": [
+    {
+      "type": "opencollective",
+      "url": "https://opencollective.com/stylelint"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/stylelint"
+    }
+  ],
   "license": "MIT",
   "author": "Stylelint",
   "main": "index.js",
