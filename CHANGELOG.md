@@ -1,5 +1,9 @@
 # Changelog
 
+## Head
+
+- Fixed: missing `funding` field in `package.json`.
+
 ## 36.0.0
 
 - Removed: `stylelint` less than `16.1.0` from peer dependencies.
