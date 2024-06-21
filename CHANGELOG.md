@@ -1,6 +1,6 @@
 # Changelog
 
-## Head
+## 36.0.1
 
 - Fixed: missing `funding` field in `package.json`.
 
