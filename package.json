@@ -62,7 +62,7 @@
     "@stylelint/prettier-config": "^3.0.0",
     "@stylelint/remark-preset": "^5.1.1",
     "eslint": "^8.57.0",
-    "eslint-config-stylelint": "^22.0.0",
+    "eslint-config-stylelint": "^23.0.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "np": "^10.0.7",
