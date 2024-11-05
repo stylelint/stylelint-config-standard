@@ -28,7 +28,7 @@
     "format": "prettier . --write",
     "prepare": "husky",
     "lint:formatting": "prettier . --check",
-    "lint:js": "eslint . --ignore-path .gitignore",
+    "lint:js": "eslint",
     "lint:md": "remark . --quiet --frail --ignore-path .gitignore",
     "lint": "npm-run-all --parallel lint:*",
     "release": "np --no-release-draft",
@@ -41,15 +41,6 @@
     "*.{js,md,yml}": "prettier --write"
   },
   "prettier": "@stylelint/prettier-config",
-  "eslintConfig": {
-    "extends": [
-      "stylelint"
-    ],
-    "globals": {
-      "module": true,
-      "require": true
-    }
-  },
   "remarkConfig": {
     "plugins": [
       "@stylelint/remark-preset"
@@ -61,8 +52,8 @@
   "devDependencies": {
     "@stylelint/prettier-config": "^3.0.0",
     "@stylelint/remark-preset": "^5.1.1",
-    "eslint": "^8.57.0",
-    "eslint-config-stylelint": "^22.0.0",
+    "eslint": "^9.14.0",
+    "eslint-config-stylelint": "^23.0.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "np": "^10.0.7",
