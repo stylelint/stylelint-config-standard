@@ -1,5 +1,10 @@
 # Changelog
 
+## 37.0.0
+
+- Removed: `stylelint` less than `16.13.0` from peer dependencies.
+- Changed: updated to [`stylelint-config-recommended@15.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/15.0.0).
+
 ## 36.0.1
 
 - Fixed: missing `funding` field in `package.json`.
