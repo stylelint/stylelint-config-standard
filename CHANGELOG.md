@@ -1,5 +1,13 @@
 # Changelog
 
+## 38.0.0
+
+- Removed: `stylelint` less than `16.18.0` from peer dependencies.
+- Changed: updated to [`stylelint-config-recommended@16.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/16.0.0).
+- Added: `color-function-alias-notation: "without-alpha"` rule.
+- Added: `container-name-pattern` (kebab-case with optional `--` prefix) rule.
+- Added: `layer-name-pattern` (kebab-case) rule.
+
 ## 37.0.0
 
 - Removed: `stylelint` less than `16.13.0` from peer dependencies.
