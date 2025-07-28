@@ -1,5 +1,11 @@
 # Changelog
 
+## 39.0.0
+
+- Removed: `stylelint` less than `16.23.0` from peer dependencies.
+- Changed: updated to [`stylelint-config-recommended@17.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/17.0.0).
+- Added: `block-no-redundant-nested-style-rules` rule.
+
 ## 38.0.0
 
 - Removed: `stylelint` less than `16.18.0` from peer dependencies.
