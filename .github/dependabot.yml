@@ -9,8 +9,8 @@ updates:
     labels:
       - 'pr: dependencies'
     groups:
-      development-dependencies:
-        dependency-type: 'development'
+      dev-deps:
+        dependency-type: development
         exclude-patterns: ['stylelint']
     ignore:
       - dependency-name: 'stylelint' # Avoid updating the peer dependency.
