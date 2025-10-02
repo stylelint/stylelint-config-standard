@@ -31,7 +31,6 @@
     "lint:js": "eslint",
     "lint:md": "remark . --quiet --frail --ignore-path .gitignore",
     "lint": "npm-run-all --parallel lint:*",
-    "release": "np --no-release-draft",
     "pretest": "npm run lint",
     "test": "node --test",
     "watch": "npm test --ignore-scripts -- --watch"
@@ -56,7 +55,6 @@
     "eslint-config-stylelint": "^25.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.0",
-    "np": "^10.2.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.6.2",
     "remark-cli": "^12.0.1",
