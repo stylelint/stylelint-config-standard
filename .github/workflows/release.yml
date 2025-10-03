@@ -1,21 +1,13 @@
 name: Release
 
 on:
-  push:
-    tags: ['**']
-
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: true
+  pull_request:
+    branches: [main]
+    types: [closed]
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    uses: stylelint/.github/.github/workflows/call-release.yml@34f1c0ac91f245ee4ee5ce725bb844328c17ccf5 # 0.3.0
     permissions:
       contents: write
-    timeout-minutes: 10
-    steps:
-      - name: Checkout
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
-      - name: Create release
-        uses: stylelint/changelog-to-github-release-action@4c981d6bca2ec40fd7c25b43e4e5ad75ba07fc5a # 0.3.1
+      id-token: write
