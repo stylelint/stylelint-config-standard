@@ -49,11 +49,11 @@ describe('flags warnings with invalid css', () => {
 		assert.deepEqual(
 			result.results[0].warnings.map((w) => w.text),
 			[
-				'Expected custom media query name "--FOO" to be kebab-case',
-				'Expected custom property name "--FOO" to be kebab-case',
-				'Expected keyframe name "FOO" to be kebab-case',
-				'Expected class selector ".FOO" to be kebab-case',
-				'Expected id selector "#FOO" to be kebab-case',
+				'Expected custom media query name "--FOO" to be kebab-case (custom-media-pattern)',
+				'Expected custom property name "--FOO" to be kebab-case (custom-property-pattern)',
+				'Expected keyframe name "FOO" to be kebab-case (keyframes-name-pattern)',
+				'Expected class selector ".FOO" to be kebab-case (selector-class-pattern)',
+				'Expected id selector "#FOO" to be kebab-case (selector-id-pattern)',
 			],
 		);
 	});
