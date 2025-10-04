@@ -29,11 +29,12 @@
 		left: calc(var(--offset) + 50%);
 	}
 
-	/* Flush nested single line comment */
-	a::after {
-		display: block;
-		content: '→';
-		background-image: url('x.svg');
+	@layer layer-foo.layer-bar {
+		a::after {
+			display: block;
+			content: '→';
+			background-image: url('x.svg');
+		}
 	}
 }
 
@@ -42,19 +43,8 @@
 		opacity: 0;
 	}
 
+	/* Flush nested single line comment */
 	to {
 		opacity: 1;
 	}
-}
-
-@layer top-layer {
-	/* Top layer content */
-
-	@layer nested-layer {
-		/* Nested layer content */
-	}
-}
-
-@layer top-layer.nested-layer {
-	/* Layer content */
 }
