@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Fixed: `layer-name-pattern` false positives for dot notation.
+
 ## 39.0.0
 
 - Removed: `stylelint` less than `16.23.0` from peer dependencies.

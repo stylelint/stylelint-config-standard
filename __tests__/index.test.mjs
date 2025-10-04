@@ -42,7 +42,7 @@ describe('flags warnings with invalid css', () => {
 	});
 
 	it('flags warnings', () => {
-		assert.equal(result.results[0].warnings.length, 5);
+		assert.equal(result.results[0].warnings.length, 7);
 	});
 
 	it('correct warning text', () => {
@@ -52,6 +52,8 @@ describe('flags warnings with invalid css', () => {
 				'Expected custom media query name "--FOO" to be kebab-case (custom-media-pattern)',
 				'Expected custom property name "--FOO" to be kebab-case (custom-property-pattern)',
 				'Expected keyframe name "FOO" to be kebab-case (keyframes-name-pattern)',
+				'Expected layer name "layer-BAR" to be kebab-case (layer-name-pattern)',
+				'Expected layer name "layer-foo.layer-BAR" to be kebab-case (layer-name-pattern)',
 				'Expected class selector ".FOO" to be kebab-case (selector-class-pattern)',
 				'Expected id selector "#FOO" to be kebab-case (selector-id-pattern)',
 			],
@@ -65,6 +67,8 @@ describe('flags warnings with invalid css', () => {
 				'custom-media-pattern',
 				'custom-property-pattern',
 				'keyframes-name-pattern',
+				'layer-name-pattern',
+				'layer-name-pattern',
 				'selector-class-pattern',
 				'selector-id-pattern',
 			],
