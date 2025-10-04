@@ -16,14 +16,14 @@
 	/* ... */
 }
 
-@layer top-layer {
-	/* Top layer content */
+@layer layer-foo {
+	/* ... */
 
-	@layer NESTED-layer {
-		/* Nested layer content */
+	@layer layer-BAR {
+		/* ... */
 	}
 }
 
-@layer top-layer.NESTED-layer {
-	/* Layer content */
+@layer layer-foo.layer-BAR {
+	/* ... */
 }
