@@ -46,3 +46,15 @@
 		opacity: 1;
 	}
 }
+
+@layer top-layer {
+	/* Top layer content */
+
+	@layer nested-layer {
+		/* Nested layer content */
+	}
+}
+
+@layer top-layer.nested-layer {
+	/* Layer content */
+}

@@ -15,3 +15,15 @@
 #FOO {
 	/* ... */
 }
+
+@layer top-layer {
+	/* Top layer content */
+
+	@layer NESTED-layer {
+		/* Nested layer content */
+	}
+}
+
+@layer top-layer.NESTED-layer {
+	/* Layer content */
+}
