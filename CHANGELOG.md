@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 39.0.1
 
 - Fixed: `layer-name-pattern` false positives for dot notation.
 
