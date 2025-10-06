@@ -15,3 +15,15 @@
 #FOO {
 	/* ... */
 }
+
+@layer layer-foo {
+	/* ... */
+
+	@layer layer-BAR {
+		/* ... */
+	}
+}
+
+@layer layer-foo.layer-BAR {
+	/* ... */
+}
