@@ -26,11 +26,11 @@
   ],
   "scripts": {
     "format": "prettier . --write",
-    "prepare": "husky",
+    "lint": "npm-run-all --parallel lint:*",
     "lint:formatting": "prettier . --check",
     "lint:js": "eslint",
     "lint:md": "remark . --quiet --frail --ignore-path .gitignore",
-    "lint": "npm-run-all --parallel lint:*",
+    "prepare": "husky",
     "pretest": "npm run lint",
     "test": "node --test",
     "watch": "npm test --ignore-scripts -- --watch"
@@ -49,12 +49,12 @@
     "stylelint-config-recommended": "^17.0.0"
   },
   "devDependencies": {
-    "@stylelint/prettier-config": "^3.0.0",
+    "@stylelint/prettier-config": "^4.0.0",
     "@stylelint/remark-preset": "^5.1.1",
-    "eslint": "^9.36.0",
-    "eslint-config-stylelint": "^25.0.0",
+    "eslint": "^9.38.0",
+    "eslint-config-stylelint": "^25.0.1",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.0",
+    "lint-staged": "^16.2.6",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.6.2",
     "remark-cli": "^12.0.1",
