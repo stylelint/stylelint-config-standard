@@ -26,11 +26,11 @@
   ],
   "scripts": {
     "format": "prettier . --write",
-    "prepare": "husky",
+    "lint": "npm-run-all --parallel lint:*",
     "lint:formatting": "prettier . --check",
     "lint:js": "eslint",
     "lint:md": "remark . --quiet --frail --ignore-path .gitignore",
-    "lint": "npm-run-all --parallel lint:*",
+    "prepare": "husky",
     "pretest": "npm run lint",
     "test": "node --test",
     "watch": "npm test --ignore-scripts -- --watch"
