@@ -5,7 +5,7 @@
 - Removed: `stylelint` less than `17.0.0` from peer dependencies.
 - Removed: support for Node.js less than 20.19.0 and 22.13.0.
 - Changed: updated to [`stylelint-config-recommended@18.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/18.0.0).
-- Changed: module type to ESM
+- Changed: module type to ESM.
 
 ## 39.0.1
 
