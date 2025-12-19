@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = {
+export default {
 	extends: 'stylelint-config-recommended',
 	rules: {
 		'alpha-value-notation': [
