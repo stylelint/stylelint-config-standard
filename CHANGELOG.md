@@ -1,5 +1,12 @@
 # Changelog
 
+## 40.0.0
+
+- Removed: `stylelint` less than `17.0.0` from peer dependencies.
+- Removed: support for Node.js less than `20.19.0`.
+- Changed: updated to [`stylelint-config-recommended@18.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/18.0.0).
+- Changed: module type to ESM.
+
 ## 39.0.1
 
 - Fixed: `layer-name-pattern` false positives for dot notation.

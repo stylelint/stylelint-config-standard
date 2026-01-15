@@ -20,7 +20,10 @@
   ],
   "license": "MIT",
   "author": "Stylelint",
-  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
   "files": [
     "index.js"
   ],
@@ -46,7 +49,7 @@
     ]
   },
   "dependencies": {
-    "stylelint-config-recommended": "^17.0.0"
+    "stylelint-config-recommended": "^18.0.0"
   },
   "devDependencies": {
     "@stylelint/prettier-config": "^4.0.0",
@@ -58,12 +61,12 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^3.7.4",
     "remark-cli": "^12.0.1",
-    "stylelint": "^16.25.0"
+    "stylelint": "^17.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^16.23.0"
+    "stylelint": "^17.0.0"
   },
   "engines": {
-    "node": ">=18.12.0"
+    "node": ">=20.19.0"
   }
 }
