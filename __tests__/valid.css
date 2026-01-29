@@ -1,50 +1,60 @@
-@import url('foo.css');
-@import url('bar.css');
-
-@custom-media --foo (min-width: 30em);
+@import url('reset.css') layer(reset);
 
 /**
  * Multi-line comment
  */
 
-:root {
-	--brand-red: hsl(5deg 10% 40%);
+@keyframes fade-in {
+	to {
+		opacity: 1;
+	}
 }
 
-/* Single-line comment */
+@layer elements {
+	:root {
+		--blue: light-dark(#06b, #3af);
+	}
 
-.class-foo:not(a, div) {
-	margin: 0;
-	top: calc(100% - 2rem);
+	/* Single-line comment */
+
+	html {
+		color-scheme: light dark;
+
+		@media (prefers-reduced-motion: no-preference) {
+			scroll-behavior: smooth;
+		}
+	}
+
+	a:visited {
+		color: oklch(from var(--blue) l c calc(h + 35));
+	}
 }
 
 /* Flush single line comment */
-@media (width >= 60em) {
-	#id-bar {
-		/* Flush to parent comment */
-		--offset: 0px;
+@layer custom-elements {
+	@scope (cards-element) {
+		:scope {
+			/* Flush to parent comment */
+			display: block grid;
+			grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 
-		color: #fff;
-		font-family: Helvetica, 'Arial Black', sans-serif;
-		left: calc(var(--offset) + 50%);
-	}
-
-	@layer layer-foo.layer-bar {
-		a::after {
-			display: block;
-			content: '→';
-			background-image: url('x.svg');
+			&:has(> :nth-child(3)) {
+				place-content: center;
+			}
 		}
 	}
-}
 
-@keyframes fade-in {
-	from {
-		opacity: 0;
-	}
+	@scope (card-element) to (slot) {
+		:scope {
+			container: card / inline-size;
+		}
 
-	/* Flush nested single line comment */
-	to {
-		opacity: 1;
+		h2:not(.foo, .bar) {
+			font-family: 'Arial Black', sans-serif;
+
+			@container card (inline-size >= 10rem) {
+				padding-inline: clamp(1rem, 5cqi, 2rem);
+			}
+		}
 	}
 }

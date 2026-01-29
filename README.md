@@ -11,59 +11,69 @@ To see the rules that this config uses, please read the [config itself](./index.
 ## Example
 
 ```css
-@import url("foo.css");
-@import url("bar.css");
-
-@custom-media --foo (min-width: 30em);
+@import url("reset.css") layer(reset);
 
 /**
  * Multi-line comment
  */
 
-:root {
-  --brand-red: hsl(5deg 10% 40%);
-}
-
-/* Single-line comment */
-
-.class-foo:not(a, div) {
-  margin: 0;
-  top: calc(100% - 2rem);
-}
-
-/* Flush single line comment */
-@media (width >= 60em) {
-  #id-bar {
-    /* Flush to parent comment */
-    --offset: 0px;
-
-    color: #fff;
-    font-family: Helvetica, "Arial Black", sans-serif;
-    left: calc(var(--offset) + 50%);
-  }
-
-  @layer layer-foo.layer-bar {
-    a::after {
-      display: block;
-      content: "→";
-      background-image: url("x.svg");
-    }
-  }
-}
-
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  /* Flush nested single line comment */
   to {
     opacity: 1;
   }
 }
+
+@layer elements {
+  :root {
+    --blue: light-dark(#06b, #3af);
+  }
+
+  /* Single-line comment */
+
+  html {
+    color-scheme: light dark;
+
+    @media (prefers-reduced-motion: no-preference) {
+      scroll-behavior: smooth;
+    }
+  }
+
+  a:visited {
+    color: oklch(from var(--blue) l c calc(h + 35));
+  }
+}
+
+/* Flush single line comment */
+@layer custom-elements {
+  @scope (cards-element) {
+    :scope {
+      /* Flush to parent comment */
+      display: block grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+      &:has(> :nth-child(3)) {
+        place-content: center;
+      }
+    }
+  }
+
+  @scope (card-element) to (slot) {
+    :scope {
+      container: card / inline-size;
+    }
+
+    h2:not(.foo, .bar) {
+      font-family: "Arial Black", sans-serif;
+
+      @container card (inline-size >= 10rem) {
+        padding-inline: clamp(1rem, 5cqi, 2rem);
+      }
+    }
+  }
+}
 ```
 
-_Note: the config is tested against this example, as such the example contains plenty of CSS syntax and features._
+_Note: the config is tested against this example, as such the example contains plenty of modern CSS syntax and features._
 
 ## Installation
 
