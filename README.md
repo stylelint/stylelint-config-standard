@@ -49,10 +49,9 @@ To see the rules that this config uses, please read the [config itself](./index.
     :scope {
       /* Flush to parent comment */
       display: block grid;
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 
       &:has(> :nth-child(3)) {
-        place-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
       }
     }
   }
@@ -60,13 +59,14 @@ To see the rules that this config uses, please read the [config itself](./index.
   @scope (card-element) to (slot) {
     :scope {
       container: card / inline-size;
+      padding-inline: clamp(1rem, 5cqi, 2rem);
     }
 
     h2:not(.foo, .bar) {
       font-family: "Arial Black", sans-serif;
 
       @container card (inline-size >= 10rem) {
-        padding-inline: clamp(1rem, 5cqi, 2rem);
+        place-self: end;
       }
     }
   }
