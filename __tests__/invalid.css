@@ -1,11 +1,15 @@
 @custom-media --FOO;
 
-:root {
-	--FOO: 1px;
+@layer FOO {
+	/* ... */
 }
 
 @keyframes FOO {
 	/* ... */
+}
+
+:root {
+	--FOO: 1px;
 }
 
 .FOO {
@@ -13,17 +17,5 @@
 }
 
 #FOO {
-	/* ... */
-}
-
-@layer layer-foo {
-	/* ... */
-
-	@layer layer-BAR {
-		/* ... */
-	}
-}
-
-@layer layer-foo.layer-BAR {
 	/* ... */
 }
