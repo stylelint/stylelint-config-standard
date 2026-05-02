@@ -10,11 +10,11 @@ on:
 
 jobs:
   lint:
-    uses: stylelint/.github/.github/workflows/call-lint.yml@60889da59f384526b8185d2aa85b35620aa6bcc0 # 0.6.0
+    uses: stylelint/.github/.github/workflows/call-lint.yml@61e84671c2d4d7af47353e7f5289a2df81bd681d # 0.7.0
     permissions:
       contents: read
 
   test:
-    uses: stylelint/.github/.github/workflows/call-test.yml@56c5d6e7e35009b7748db7558eac5377ec88f446 # 0.6.1
+    uses: stylelint/.github/.github/workflows/call-test.yml@61e84671c2d4d7af47353e7f5289a2df81bd681d # 0.7.0
     permissions:
       contents: read
