@@ -14,8 +14,6 @@ updates:
         exclude-patterns: ['stylelint']
     ignore:
       - dependency-name: 'stylelint' # Avoid updating the peer dependency.
-    cooldown:
-      default-days: 7
 
   - package-ecosystem: github-actions
     directory: '/'
@@ -28,5 +26,4 @@ updates:
       stylelint-actions:
         patterns: ['stylelint/.github/*']
     cooldown:
-      default-days: 7
       exclude: ['stylelint/.github/*']
