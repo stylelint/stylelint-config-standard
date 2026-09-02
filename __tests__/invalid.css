@@ -1,4 +1,4 @@
-@custom-media --FOO;
+@custom-media --FOO (min-width: 10em);
 
 @layer FOO {
 	/* ... */
