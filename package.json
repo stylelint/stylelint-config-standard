@@ -52,13 +52,13 @@
     "stylelint-config-recommended": "^19.0.0-0"
   },
   "devDependencies": {
-    "@stylelint/prettier-config": "^4.0.0",
-    "@stylelint/remark-preset": "^5.1.1",
-    "eslint": "^10.11.0",
-    "eslint-config-stylelint": "^27.0.0",
+    "@stylelint/prettier-config": "^4.1.0",
+    "@stylelint/remark-preset": "^5.1.2",
+    "eslint": "^10.13.0",
+    "eslint-config-stylelint": "^28.0.0",
     "lint-staged": "^17.6.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.9.9",
+    "prettier": "^3.9.10",
     "remark-cli": "^12.0.1",
     "stylelint": "^18.0.0-0"
   },
