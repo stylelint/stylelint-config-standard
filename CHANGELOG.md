@@ -1,6 +1,6 @@
 # Changelog
 
-## 41.0.0-next.0
+## 41.0.0
 
 - Removed: `declaration-block-single-line-max-declarations` rule.
 - Removed: `stylelint` less than `18.0.0` from peer dependencies.
