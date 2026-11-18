@@ -1,5 +1,9 @@
 # Changelog
 
+## 41.1.0
+
+- Added: TypeScript types.
+
 ## 41.0.0
 
 - Removed: `declaration-block-single-line-max-declarations` rule.
